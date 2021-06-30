@@ -86,7 +86,7 @@ Then, continue the step on [Configuring and starting the Chrome Remote Desktop s
 
 Now you can either continue here on your new GUI, or you could continue from the Terminal console. Regardless of where you are continuing, the following step still uses a Terminal console. Hence, either continue from the Terminal console of PuTTY, or you can open up a Terminal console directly inside. The icon should look like this for those not familiar with it. 
 
-![](/images/terminal.svg "terminal logo taken from https://icon-icons.com/icon/Terminal/131942")
+![](/images/terminal_icon_131942.svg "terminal logo taken from https://icon-icons.com/icon/Terminal/131942")
 
 Or sometimes you might not get a terminal but other Terminal emulator such as XTerm (try searching for it in the menu page). 
 
