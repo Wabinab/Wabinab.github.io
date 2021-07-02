@@ -23,12 +23,13 @@ google_analytics:
 repository: Wabinab/Wabinab.github.io
 
 # Everything below here can be ignored, unless you want to change the theme entirely
-theme: jekyll-theme-cayman
+theme: # minima
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-octicons
   - jekyll-github-metadata
+  - jekyll-target-blank
   - kramdown-syntax-coderay
 
 titles_from_headings:
@@ -44,3 +45,8 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: coderay  #rouge
+  
+target-blank:
+    rel: nofollow
+
+header_page_refs: ['about']
