@@ -27,26 +27,26 @@ repository: Wabinab/Wabinab.github.io
 # Everything below here can be ignored, unless you want to change the theme entirely
 theme: # minima
 plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-octicons
-  - jekyll-github-metadata
+#   - jekyll-feed
+#   - jekyll-gist
+#   - jekyll-octicons
+#   - jekyll-github-metadata
   - jekyll-target-blank
   - kramdown-syntax-coderay
 
-titles_from_headings:
-  enabled:     true
-  strip_title: true
-  collections: true
+# titles_from_headings:
+#   enabled:     true
+#   strip_title: true
+#   collections: true
 
-highlighter: rouge
-markdown: kramdown
-kramdown:
-  math_engine: katex
-  input: GFM
-  auto_ids: true
-  hard_wrap: false
-  syntax_highlighter: coderay  #rouge
+# highlighter: rouge
+# markdown: kramdown
+# kramdown:
+#   math_engine: katex
+#   input: GFM
+#   auto_ids: true
+#   hard_wrap: false
+#   syntax_highlighter: coderay  #rouge
   
 target-blank:
     rel: nofollow
