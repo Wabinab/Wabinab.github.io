@@ -29,6 +29,7 @@ plugins:
   - jekyll-gist
   - jekyll-octicons
   - jekyll-github-metadata
+  - kramdown-syntax-coderay
 
 titles_from_headings:
   enabled:     true
@@ -42,4 +43,4 @@ kramdown:
   input: GFM
   auto_ids: true
   hard_wrap: false
-  syntax_highlighter: rouge
+  syntax_highlighter: coderay  #rouge
