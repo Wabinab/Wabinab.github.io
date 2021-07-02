@@ -28,25 +28,25 @@ repository: Wabinab/Wabinab.github.io
 theme: # minima
 plugins:
   - jekyll-feed
-#   - jekyll-gist
+  - jekyll-gist
   - jekyll-octicons
-#   - jekyll-github-metadata
+  - jekyll-github-metadata
   - jekyll-target-blank
-#   - kramdown-syntax-coderay
+  - kramdown-syntax-coderay
 
-# titles_from_headings:
-#   enabled:     true
-#   strip_title: true
-#   collections: true
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
 
-# highlighter: rouge
-# markdown: kramdown
-# kramdown:
-#   math_engine: katex
-#   input: GFM
-#   auto_ids: true
-#   hard_wrap: false
-#   syntax_highlighter: coderay  #rouge
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: coderay  #rouge
   
 target-blank:
     rel: nofollow
