@@ -1,5 +1,3 @@
-# Setting up Datacrunch.io from scratch
-
 ## Various arguments on different choices before we go into the topic
 You are more than welcome to skip the following 2 sections directly to the setup. 
 
