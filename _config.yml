@@ -32,7 +32,7 @@ plugins:
 #   - jekyll-octicons
 #   - jekyll-github-metadata
   - jekyll-target-blank
-  - kramdown-syntax-coderay
+#   - kramdown-syntax-coderay
 
 # titles_from_headings:
 #   enabled:     true
