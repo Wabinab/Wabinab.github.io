@@ -113,9 +113,25 @@ conda create -n rapids-21.06 -c rapidsai -c nvidia -c conda-forge \
 Be sure to check out [RAPIDS](https://rapids.ai/start.html) page for the latest installation update and also whether the image
 you chosen matches the correct Python and CUDA version. 
 
+### X-Session or Ubuntu (Edit: 03 July 2021)
+This wasn't encountered with frequent use of Chrome Remote Desktop until yesterday, where without knowing why, the first thing you login you will see a page asking whether to render using XSession (default) or Ubuntu. By default, choosing XSession could work, but it ends up not. Choosing XSession seems to disconnect instead of rendering graphics. Hence, the choice left is Ubuntu, which successful render, however with an Ubuntu interface instead (which might run slower since 3D rendering is on and one wasn't sure how to disable 3D rendering in Ubuntu). Also, it comes with no app install, including the Chrome Browser above is also not installed, so the caveat is to re-install everything you need in Ubuntu, **including Firefox, File Manager** (yes there's no GUI file manager), and **other tools you need** (such as VSCode or other IDEs). 
+
+Install GUI file manager Nautilus: 
+```bash
+sudo apt install nautilus-admin
+```
+(if doesn't work, then)
+```bash
+sudo apt install nautilus
+```
+
+Firefox installation guide can be found [here](https://linuxconfig.org/how-to-install-uninstall-and-update-firefox-on-ubuntu-20-04-focal-fossa-linux)
+
 ### Conclusion
 That concludes setting up Datacrunch.io for it to work. 
 
 Of course, there comes with one major drawback of datacrunch.io, which is that using NVMe as storage (which is the default storage) has an expensive upkeep, and it is encouraged to keep your volume small, just sufficient to install the required packages. It is unsure of whether you could connect two different Volume (one OS volume and another non-OS volume) to the same instance. If this works, you might consider letting the OS storage stays as using NVMe for fast bootup and storing other larger files on a hard disk (which is a quarter of NVMe cost in datacrunch.io). Otherwise, consider hosting your data somewhere else where it might be much more cheaper like Google Cloud Bucket, Azure Blob Storage, or AWS S3 bucket, and "flow" them (download them into memory) during ML training. 
+
+Other drawback outline by above is everytime you want to remote desktop in, it requires you allow access again. The underlying mechanism of it cannot detect the old setup is unknown. Just start from **configuring and starting the Chrome remote desktop service** (i.e. go to https://remotedesktop.google.com/headless and setup from there, ssh into your vm with non-root account, set it up, then connect). 
 
 Happy learning! 
