@@ -8,3 +8,4 @@ And searching for snake eagles, well you get this image.
 
 ![](images/Snake-In-Eagles-Shadow.jpg "Hmm... Images from https://martialartsactionmovies.com/snake-in-the-eagles-shadow-with-jackie-chan/)
 
+Changing their names to "fish eagles" and "serpent eagles" gives better results. 
