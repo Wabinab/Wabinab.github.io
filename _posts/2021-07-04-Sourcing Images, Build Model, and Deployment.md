@@ -17,3 +17,9 @@ And searching for snake eagles, well you get this image.
 </figure>
 
 Changing their names to "fish eagles" and "serpent eagles" gives better results. 
+
+The full project can be found [here](https://github.com/Wabinab/Learning_fastai), along with the binder link: 
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Wabinab/Learning_fastai/HEAD?urlpath=%2Fvoila%2Frender%2FEagleClassifier.ipynb)
+
+Upload an image and play with it. Have fun! 
