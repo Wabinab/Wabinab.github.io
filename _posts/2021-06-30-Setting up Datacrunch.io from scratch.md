@@ -82,11 +82,7 @@ the password you set will be used to login here.
 
 Then, continue the step on [Configuring and starting the Chrome Remote Desktop service](https://cloud.google.com/architecture/chrome-desktop-remote-on-compute-engine#configuring_and_starting_the_chrome_remote_desktop_service) by following the instruction, go through the *Connecting to the VM instance* section, and *Improving the remote desktop experience* section (except the setting the password section as you already set your password). Check out the other sections if you wish to, for now, this is sufficient for us to continue.
 
-Now you can either continue here on your new GUI, or you could continue from the Terminal console. Regardless of where you are continuing, the following step still uses a Terminal console. Hence, either continue from the Terminal console of PuTTY, or you can open up a Terminal console directly inside. The icon should look like this for those not familiar with it. 
-
-![](/images/terminal_icon_131942.svg "terminal logo taken from https://icon-icons.com/icon/Terminal/131942")
-
-Or sometimes you might not get a terminal but other Terminal emulator such as XTerm (try searching for it in the menu page). 
+Now you can either continue here on your new GUI, or you could continue from the Terminal console. Regardless of where you are continuing, the following step still uses a Terminal console. Hence, either continue from the Terminal console of PuTTY, or you can open up a Terminal console directly inside. 
 
 This includes installing Conda. Here we will use [Anaconda](https://www.anaconda.com/), however if you are more familiar with other Condas such as [Miniconda](https://docs.conda.io/en/latest/miniconda.html) you can go ahead and skip the Conda installation section. 
 
@@ -141,4 +137,4 @@ Connection of second hard drive proven not working. Although it can be discovere
 
 If you get the choice to choose XSession and Ubuntu (which is very rare, encountered once and un-replicable thereafter) after you install the file manager you can click on Other location and type "ssh://<your-public-ip-address>" which would redirect you to the login screen to enter username and password. By default, this would mount the main folder. Direct yourself to "home" to find the usual directory from there. 
     
-However, these all requires root permission to access, hence the best way is to use SSHFS to connect to it. There is a really good article written on how to do this [here](https://www.redhat.com/sysadmin/sshfs). Check it out! Now after this, you can access it with full permission (i.e. without root). Irregardless of how fast is the connection between host and your machine, you can now use the particular folder. 
+However, these all requires root permission to access, hence the best way is to use SSHFS to connect to it. There is a really good article written on how to do this [here](https://www.redhat.com/sysadmin/sshfs). Check it out! Now after this, you can access it with full permission (i.e. without root). However, the connection is proven to be quite slow, hence editing inside you machine before moving out might be the best choice. Store your data somewhere else and stream them into temporary storage while training would freed you from requiring storage large amount of data, at the price of slower streaming speed. 
