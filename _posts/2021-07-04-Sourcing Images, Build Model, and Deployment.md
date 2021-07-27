@@ -1,3 +1,5 @@
+# Sourcing Images, Build Model, and Deployment
+
 As an exercise for Chapter 2: Production of Fast.ai, we are to outsource our images and build our own image classifier. Outsourcing from the internet haven't been the best experience. This time, one decides to build an **eagle classifier**. However, just like any other images, "eagle" can have different meaning. 
 
 For example, searching for "sea eagles" haven't been much luck as half of the image is as expected, "real" sea eagles, while the other half represents the football team [Manly Warringah Sea Eagles](https://www.seaeagles.com.au/). 
