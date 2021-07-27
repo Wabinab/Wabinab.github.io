@@ -1,4 +1,4 @@
-## Various arguments on different choices before we go into the topic
+# Various arguments on different choices before we go into the topic
 You are more than welcome to skip the following 2 sections directly to the setup. 
 
 If you haven't already know, [datacrunch.io](https://datacrunch.io/) offers one of the cheapest option for a single dedicated V100 GPU,
