@@ -19,3 +19,5 @@ One would like to implement. With "full screen mode" comes "dynamic resizing of 
 
 ## Why not uses Darknet? (Personal Opinion, **NOT FACTS**)
 One tries to make Darknet on Windows Subsystem for Linux (WSL). It failed. First failure: despite following instructions to install GPU drivers on WSL, WSL failed to detect GPU presence. Second, WSL opencv does not connect to my camera, rendering great failure. With great frustrations comes great abandonment. Though, there are some tutorials (example [here](https://medium.com/analytics-vidhya/installing-darknet-on-windows-462d84840e5a), or [here](https://gitee.com/suiyifan/darknet) and many more. Though useful, for basic stuffs, one would not want to deal with CMake (which really, doesn't leave much good impression when using CMake to compile GPU support). 
+
+Not to be ignored, Darknet have far far more features than our program do. If you requires those features, darknet would be a better choice. 
