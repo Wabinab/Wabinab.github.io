@@ -72,3 +72,17 @@ new_figure(x, y, "frame_min")
 
 We take in an image of size 640x480x3 and then try to find the maximum and minimum of their difference. These are the images: 
 
+![](/images/norm_frame_min.png "Norm Frame Min")
+
+![](/images/norm_frame_max.png "Norm Frame Max")
+
+Perhaps the more important of the two are the Max as after ReLU we might expect the min to disappear (since it's negative anyways). What's surprising is that the max difference between the original and the quantized difference is 0.04. On one hand, it's quite small, one the other hand, it's quite big (as it depends on our outputs, which might be smaller than 0.04). 
+
+### Caveats
+Note that we are only doing this for one layer of CNN and not even including ReLU in the filter. Hence, this might not work so well (a.k.a. much larger min max differences) if you try adding ReLU or Linear layers. This is because the quantized outputs not normalized by the `norm_factor` are passed on to the next layer, and we cannot be sure that the quantized output will continue to work as expected downstream compared to non-quantized output. 
+
+Second, do note that we did not convert our quantized values to `torch.uint8` and our model still use `torch.float32` although the values are "quantized". Not sure if this is same as Fake Quantization. 
+
+That's all for now. One might investigate further into this, one might not. We shall see. 
+
+Have a nice day! 
