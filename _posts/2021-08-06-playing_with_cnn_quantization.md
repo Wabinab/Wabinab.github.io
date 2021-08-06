@@ -1,5 +1,11 @@
 # Playing with CNN Quantization
 
+Quantization of models have been a fad and research focused topic nowadays, particularly with INT8 as weights, it could speed up model inference and also create more lightweight models. Some APIs provide introduction to quantization such as [PyTorch](https://pytorch.org/blog/introduction-to-quantization-on-pytorch/) and [TensorFlow](https://www.tensorflow.org/lite/performance/post_training_quantization) and maybe others. And irregardless whether there are proper implementations of quantization for CNN (As far as one is aware of, CNN may have static quantization for PyTorch but certainly not yet for dynamic quantization, which PyTorch only supports LSTM and Linear layers nowadays. For TensorFlow, one have no idea as one haven't look at it yet). 
+
+Irregardless, let's play around with quantization and see if we can create some quantization for CNN layer only. 
+
+First, we define the quantization code. 
+
 ```python
 def quantization(model):
     keys = model.state_dict().keys()
@@ -14,6 +20,8 @@ def quantization(model):
     return model
 ```
 
+Then the plotting code. 
+
 ```python
 def new_figure(x, y, save_loc):
     plt.figure()
@@ -21,6 +29,8 @@ def new_figure(x, y, save_loc):
     plt.grid()
     plt.savefig(f"figures/{save_loc}.png", dpi=500)
 ```
+
+Then the experimental code. 
 
 ```python
 import torch
@@ -59,3 +69,6 @@ y = [(conv_model_orig(norm_frame) - (conv_model(norm_frame) / norm_factor)).min(
 
 new_figure(x, y, "frame_min")
 ```
+
+We take in an image of size 640x480x3 and then try to find the maximum and minimum of their difference. These are the images: 
+
