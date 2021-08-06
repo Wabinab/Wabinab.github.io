@@ -72,11 +72,11 @@ new_figure(x, y, "frame_min")
 
 We take in an image of size 640x480x3 and then try to find the maximum and minimum of their difference. These are the images: 
 
-Norm Frame Min:
+**Norm Frame Min:**
 
 ![](/images/norm_frame_min.png "Norm Frame Min")
 
-Norm Frame Max: 
+**Norm Frame Max:** 
 
 ![](/images/norm_frame_max.png "Norm Frame Max")
 
