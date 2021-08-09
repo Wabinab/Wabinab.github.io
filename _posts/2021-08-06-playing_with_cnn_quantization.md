@@ -6,7 +6,7 @@ Irregardless, let's play around with quantization and see if we can create some 
 
 ### Three channels
 
-First, we define the quantization code. 
+First, we define the quantization code. Note, this code works on `torch==1.9.0` version. For older version of torch (such as 1.7.1), `torch.div()` doesn't yet have "rounding_mode". 
 
 ```python
 def quantization(model):
@@ -61,13 +61,19 @@ conv_model = quantization(conv_model)
 # Find normalization factor for max value
 x = torch.arange(58, 66, 0.1)
 y = [(conv_model_orig(norm_frame) - (conv_model(norm_frame) / norm_factor)).max()
-     for norm_factor in our_range]
+     for norm_factor in x]
+     
+# # ====================== FOR TORCH < 1.9.0 ==================== #
+# x = x.detach().numpy()
+# y = [m.detach().numpy() for m in y]
+# # ============================================================= #
 
 new_figure(x, y, "frame_max")
 
 # Repeat for min value
 y = [(conv_model_orig(norm_frame) - (conv_model(norm_frame) / norm_factor)).min()
-     for norm_factor in our_range]
+     for norm_factor in x]
+# y = [m.detach().numpy() for m in y]
 
 new_figure(x, y, "frame_min")
 ```
