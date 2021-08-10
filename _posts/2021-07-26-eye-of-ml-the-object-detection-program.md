@@ -2,7 +2,9 @@
 
 [Eye of ML](https://github.com/Wabinab/eye_of_ml) is a simple object detection program. It connects to your main webcam for input, and output the image in real time. 
 
-To run, just run render.py (if it works by double click, if not, `python -m render` on the command line shall work). If you would like to use EfficientDet models, run `efficientdet.bat` (for Window users, mac users requires renaming the file to `efficientdet.sh` before running). 
+To run, just run render.py (if it works by double click, if not, `python -m render` on the command line shall work). If you would like to use EfficientDet models, run `efficientdet.bat` (for Window users, mac users requires renaming the file to `efficientdet.sh` before running). This requires installation of wget for downloading models automatically. Alternatively you could infer and copy the hyperlink from the `render.py` file and download manually, and putting them into the respective folder(s). 
+
+Additionally, there is also two different models. One is the *Fast Neural Style Transfer* (FNST) which do real-time style transfer. However, FNST wasn't very useful with real-time. Finally, there is *Canny Edge Detection* as well. 
 
 ## What was learnt? Challenges?
 This is the first time one uses [Tkinter](https://wiki.python.org/moin/TkInter) to develop a GUI. Although simple, it provides a few basic functionality that the program requires. Seriously speaking, the interface is designed to be as little features as possible to not flood the users with too many choices. 
