@@ -6,7 +6,12 @@ Tensor Processing Unit (TPU) is a very fast hardware in terms of performing matr
 
 ![name](https://lh3.googleusercontent.com/jFe33X6CNK3_tbiLACnV71HyO3mpntQ6nd6-it-whvptN_u1qmyF4M2N5kr-t0NctnTbqGo7xnd2=e14-rw-lo-sc0xffffff-w1502)(Image taken from https://cloud.google.com/tpu). 
 
-Let's look at some of the speed of TPU comparison with GPUs. We will only compare memory bandwidth and compute speed since they are the two most important factors. 
+Let's look at some of the speed of TPU comparison with GPUs. We will only compare memory bandwidth and compute speed since they are the two most important factors. We will also list the about of memory (called *High Bandwidth Memory* on TPU while on GPU it depends, but we will just call is GPU RAM generally). 
+
+| Device | Memory Bandwidth (GBit/s) | Compute speed (TFLOPs) | RAM( GB) | 
+| ------ | ------------------------- | ---------------------- | --- |
+| NVIDIA P100 | 732 (16GB) <br> 549 (12GB) | 4.7 (FP64) <br> 9.3 (FP32) <br> 18.7 (FP16) | 16 <br> 12 |
+
 
 Difference between TPU and GPU is GPU calculation can be done with FP16, FP32, FP64 (and in the near future, might have support for INT8 on PyTorch Quantization. Unsure about TensorFlow quantization support for GPU). TPU uses `bfloat16` (Brain Floating Point Format) instead. You will have to be slightly more careful of BFP16 usage. For example, if inside the training code you make conversion to FP16 instead of FP32, *an exception will be raised*. (solution is convert to FP32 instead). One is unsure how bfloat16 represents its mantissa and exponent but you can check it out yourself. 
 
