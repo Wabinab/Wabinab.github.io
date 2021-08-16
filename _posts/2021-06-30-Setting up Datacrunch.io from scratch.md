@@ -15,6 +15,8 @@ The really cool thing with Datacrunch is V100, yes, V100. While you can rent GPU
 that offers more reasonable price for hobbyist to play with. Furthermore, to save price even further, you might want to choose 
 Spot/Preemptive VMs instead of dedicated ones. At certain times they sufficed, other times not. 
 
+**P.S. New Update (16 August 2021). A100 GPU (about 1.7x more powerful than V100) is now available for rent.** Moreover, A100 is equipped with much more CPU and RAM than V100 instance does, so if your program is heavily dependent on data fetching (especially computer vision problems, which one mostly experienced bottleneck with CPU and perhaps GPU memory bandwidth) this would enhance the process of fully utilizing GPU computing resources. 
+
 ### Performance wise of V100
 
 Just to compare the performance, [fast.ai](https://fast.ai/) have a repository called [fastbook](https://github.com/fastai/fastbook) 
