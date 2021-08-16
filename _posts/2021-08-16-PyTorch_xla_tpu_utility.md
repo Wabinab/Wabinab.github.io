@@ -1,4 +1,4 @@
-# PyTorch XLA TPU Utility
+# [PyTorch XLA TPU Utility](https://github.com/Wabinab/TPU_utility)
 
 **Goal:** To ease the usage of TPU without much changes in your original code, provided the original code is more functionally written. 
 
@@ -19,7 +19,7 @@ Let's look at some of the speed of TPU comparison with GPUs. We will only compar
 * P100 specs check [here](https://images.nvidia.com/content/tesla/pdf/nvidia-tesla-p100-PCIe-datasheet.pdf)
 * (GPU only) When we use something "or" something, (unless otherwise specified) it means "PCIe specs" or "SXM specs". If no "or" is used, it either means both result in same performance, or only PCIe is available. 
 * Note that V100 have PCIe and SXM2 type. Check [V100 specs](https://images.nvidia.com/content/technologies/volta/pdf/volta-v100-datasheet-update-us-1165301-r5.pdf) for more information. We did not include V100S PCIe here. TC means *Tensor Cores*.
-* A100: TC means *Tensor Cores*. TF stands for *Tensor Float*. **TF32 does not equals FP32**. TOPS instead of TFLOPS because INT8 is not a floating number. 
+* [A100](https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf): TC means *Tensor Cores*. TF stands for *Tensor Float*. **TF32 does not equals FP32**. TOPS instead of TFLOPS because INT8 is not a floating number. 
 * TPU comes with **8 chips**, running in parallel to each other. We are giving information **for 8 chips in total** unless otherwise specified (per chip). Check [here](https://dl.acm.org/doi/pdf/10.1145/3360307) for most of the information on TPU. Check [here](https://cloud.google.com/tpu) for basic TPU information. 
 
 Difference between TPU and GPU is GPU calculation can be done with FP16, FP32, FP64 (and in the near future, might have support for INT8 on PyTorch Quantization. Unsure about TensorFlow quantization support for GPU). TPU uses `bfloat16` (Brain Floating Point Format) instead. You will have to be slightly more careful of BFP16 usage. For example, if inside the training code you make conversion to FP16 instead of FP32, *an exception will be raised*. (solution is convert to FP32 instead). One is unsure how bfloat16 represents its mantissa and exponent but you can check it out yourself. 
