@@ -21,6 +21,7 @@ Let's look at some of the speed of TPU comparison with GPUs. We will only compar
 * Note that V100 have PCIe and SXM2 type. Check [V100 specs](https://images.nvidia.com/content/technologies/volta/pdf/volta-v100-datasheet-update-us-1165301-r5.pdf) for more information. We did not include V100S PCIe here. TC means *Tensor Cores*.
 * [A100](https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf): TC means *Tensor Cores*. TF stands for *Tensor Float*. **TF32 does not equals FP32**. TOPS instead of TFLOPS because INT8 is not a floating number. 
 * TPU comes with **8 chips**, running in parallel to each other. We are giving information **for 8 chips in total** unless otherwise specified (per chip). Check [here](https://dl.acm.org/doi/pdf/10.1145/3360307) for most of the information on TPU. Check [here](https://cloud.google.com/tpu) for basic TPU information. 
+* Here are more information on TPU's [system architecture](https://cloud.google.com/tpu/docs/system-architecture-tpu-vm). 
 
 Difference between TPU and GPU is GPU calculation can be done with FP16, FP32, FP64 (and in the near future, might have support for INT8 on PyTorch Quantization. Unsure about TensorFlow quantization support for GPU). TPU uses `bfloat16` (Brain Floating Point Format) instead. You will have to be slightly more careful of BFP16 usage. For example, if inside the training code you make conversion to FP16 instead of FP32, *an exception will be raised*. (solution is convert to FP32 instead). One is unsure how bfloat16 represents its mantissa and exponent but you can check it out yourself. 
 
@@ -51,3 +52,5 @@ As an extra steps, it is recommended to **cache your dataset** beforehand. Cachi
 Caching dataset can be done by running `tpu_cache_ds_utils.py`. It will then run `warmup` to do the caching. This **will take quite a lot of disk space** depending on your original dataset size, and how much augmentation you performs. In one's case, the original dataset is about 15GB, and the augmented dataset 11GB. But remember, augmented dataset resize to 224x224 images while original are much larger, with the smallest size about 1500x1500, usually around 3000x2000 ish. 
 
 Caching **can take quite an amount of time** depending on your dataset. In one's case, it takes more than half an hour to finish warming up. 
+
+Here is the link to the [official performance guideline from google](https://cloud.google.com/tpu/docs/performance-guide), although this performance guideline describes in TensorFlow, and it's applicable to PyTorch functionals as well. 
