@@ -13,6 +13,7 @@ Let's look at some of the speed of TPU comparison with GPUs. We will only compar
 | NVIDIA P100 | 732 (16GB) <br> 549 (12GB) | 4.7 (FP64) <br> 9.3 (FP32) <br> 18.7 (FP16) | 16 <br> 12 (unknown??) |
 | NVIDIA V100* | 900 | 7 or 7.8 (FP64) <br> 14 or 15.7 (FP32) <br> 112 or 125 (TC) | 32 <br> 16 HBM2 |
 | NVIDIA A100 | 1555 (40GB) <br> 1935 or 2039 (80GB) | 9.7 or 19.5 (TC) FP64 <br> 19.5 FP32 <br> 156 or 312 (sparsity) TF32 <br> 312 or 624 (sparsity) BFLOAT16 TC <br> 312 or 624 (sparsity) FP16 TC <br> 624 TOPS or 1248 TOPS (sparsity) INT8 | 40 HBM2 <br> 80 HBM2e |
+| NVIDIA RTX 3090 | 936.2 | (Theoretical) 0.556 (FP64), 35.58 (FP32, FP16) | 24 GDDR6X |
 | TPU v2 | 700 per chip | 180 (bfloat16) <br> 46 (max per chip) | 64 HBM total |
 | TPU v3 | 900 per chip | 420 (bfloat16) <br> 123 (max per chip) | 128 HBM total |
 
@@ -20,6 +21,7 @@ Let's look at some of the speed of TPU comparison with GPUs. We will only compar
 * (GPU only) When we use something "or" something, (unless otherwise specified) it means "PCIe specs" or "SXM specs". If no "or" is used, it either means both result in same performance, or only PCIe is available. 
 * Note that V100 have PCIe and SXM2 type. Check [V100 specs](https://images.nvidia.com/content/technologies/volta/pdf/volta-v100-datasheet-update-us-1165301-r5.pdf) for more information. We did not include V100S PCIe here. TC means *Tensor Cores*.
 * [A100](https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf): TC means *Tensor Cores*. TF stands for *Tensor Float*. **TF32 does not equals FP32**. TOPS instead of TFLOPS because INT8 is not a floating number. 
+* [GTX 3090 datasheet taken from here](https://www.techpowerup.com/gpu-specs/geforce-rtx-3090.c3622)
 * TPU comes with **8 chips**, running in parallel to each other. We are giving information **for 8 chips in total** unless otherwise specified (per chip). Check [here](https://dl.acm.org/doi/pdf/10.1145/3360307) for most of the information on TPU. Check [here](https://cloud.google.com/tpu) for basic TPU information. 
 * Here are more information on TPU's [system architecture](https://cloud.google.com/tpu/docs/system-architecture-tpu-vm). 
 
@@ -34,7 +36,7 @@ TPU works more like multiprocessing rather than a single unit. In fact, TPU come
 
 Talking about our program. First start with important thing to note. Just like usual multiple GPUs, if you are to use multiple TPUs, learning rate and batch size will be multiplied by the number of cores (called `xm.xrt_world_size()`). So if you define too large a batch size (for one's example, 64, with total batch size 64 * 8 = 512), you would reach Out Of Memory. Similarly, learning rate requires you to tweak a bit more. 
 
-There aren't yet many examples, but those names starting with `test-*.ipynb` are examples. Example, [`test-tpu-utility.ipynb`](https://nbviewer.jupyter.org/github/Wabinab/TPU_utility/blob/main/test-tpu-utility.ipynb) demonstrates how to use the one cycle policy with cached dataset and [`test_create_dataset.ipynb`](https://nbviewer.jupyter.org/github/Wabinab/TPU_utility/blob/main/test_create_dataset.ipynb) demonstrating how to create a `xcd.CachedDataset`. (**One more example to come (without cache dataset)**, particularly, how to use learning rate finder, and how to cache your dataset). 
+There aren't yet many examples, but those names starting with `test-*.ipynb` are examples. Example, [`test-tpu-utility.ipynb`](https://nbviewer.jupyter.org/github/Wabinab/TPU_utility/blob/main/test-tpu-utility.ipynb) demonstrates how to use the one cycle policy with cached dataset and [`test_create_dataset.ipynb`](https://nbviewer.jupyter.org/github/Wabinab/TPU_utility/blob/main/test_create_dataset.ipynb) demonstrating how to create a `xcd.CachedDataset`. Also, check out [this kaggle notebook](https://www.kaggle.com/wabinab/test-tpu-training) on how to do vanilla training (without using One cycle policy). 
 
 Currently, the *one cycle policy* supports multi-class label (the example one tested with). It is unsure whether it supports other types of problems. (**to be updated** Will update to allow ML Engineers to create their own train and test loop function, as `self.train_loop_fn` and `self.test_loop_fn` in the future by assigning of function to class). 
 
