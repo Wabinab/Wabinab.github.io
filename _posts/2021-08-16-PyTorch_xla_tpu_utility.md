@@ -60,3 +60,19 @@ So caching dataset seems to lead to same number of files (requires checking). Th
 Caching **can take quite an amount of time** depending on your dataset. In one's case, it takes more than half an hour to finish warming up. Ideally, set it to warm up on Kaggle or on Colab and autosave the output would be great so you could not worry about it in the meantime. (**To be updated: whether caching requires TPU or not. If not, perhaps just with installation of the XLA library (which is successful without TPU required) is sufficient)**. 
 
 Here is the link to the [official performance guideline from google](https://cloud.google.com/tpu/docs/performance-guide), although this performance guideline describes in TensorFlow, and it's applicable to PyTorch functionals as well. 
+
+## What's for the future? 
+### Colab support
+Support for Colab will be out for the future when one writes extra code for `setup_colab()`. Sometimes we requires Colab rather than Kaggle especially if your dataset isn't just "readily available" in Kaggle, this could take advantage. For example, you may have a dataset in GCS Bucket which you could mount onto Colab. 
+
+Why Colab? **What one is going to mention is not certain. Make sure you research further into how this works**. If you are connecting to a TPU instance on colab, **you might get 40 vCPUs**. This allow you to do preprocessing sufficiently fast before fetching to the TPU, fully utilizing TPU to max. However, it's not certainly sure whether by just switching to TPU instance you will definitely get it, or you might get a usual 2 vCPUs instance sometimes. *You might want to perform "Runtime -> Factory Reset Runtime" several times and check it out*.
+
+Second, **you might get 36 GB of RAM** (it's actually 40GB, but useable is only 36094 MB) (not TPU RAM, but usual CPU RAM). That's sufficient to run larger batch size. TPU ideally runs at batch size multiples of 64, but due to RAM on Kaggle you might only be able to run with 32, under-utilizing TPU. 
+
+Third, more disk space. Provided the original data is mounted, you can save more output onto the temporary disk on Colab. Moreover, you could also save output onto mounted disk space (though data exchange rate for GCS isn't very beautiful, seriously speaking, especially via mounting. The API for calling GCS might work better, though everything as of April 2021 runs serially: meaning you cannot fetch them in parallel, though this might update in the future). 
+
+Then why not Colab? Well, Colab uses TPU v2 which is slower compared to TPU v3 (used in Kaggle). But said back, you cannot even fully utilize TPU v3 on Kaggle, so there's no reason not to prefer Colab than Kaggle. 
+
+Second, your dataset is more readily available on Kaggle. Downloading the dataset onto Colab isn't feasible due to disk space limitations. You might need to save the dataset onto GCS before mounting onto Colab to deal against this, especially if your data is larger than the available disk space. 
+
+Third, though the chances are slim, you might be not granted a TPU. There is an underlying mechanism to calculate how much you use Colab (which you cannot see, and one isn't sure how to check it either), and you have a quota meter as well (just like Kaggle). The more you use Colab, the more likely you will exhaust this quota and you might not be granted a TPU. Ideally, it is thought that you have "unlimited" CPU usage so write your code with CPU kernel before switching to TPU when you want to run it. 
