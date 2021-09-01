@@ -81,3 +81,5 @@ Third, though the chances are slim, you might be not granted a TPU. There is an 
 
 ## Other Caveats noticed
 Although the **Learning Rate Finder** is available, it is noticed that `distrib_lr_finder()` and `lr_finder()` didn't produce good results. It is unknown whether this is because the function is flawed or because of the usage of TPUs. More investigation is required before delving deeper. **It is encouraged not to use this function as of now until one make updates. Go ahead if you want to experiment with it, though.**
+
+Edit 01 September 2021: To use **LRFinder**, ensure that you are **not** using parallel `dataloader`, or the result wouldn't look correct. That is, when you call `dataloader`, call it with `distributed=False` rather than other methods, (perhaps) including using `distrib_dataloader()`. You can experiment on what the graph looks like if you did using distributed. One suspects the reason is due to learning rate requires multiplication by `xm.xrt_world_size()` even for distributed, which isn't supported by `LRFinder`. 
