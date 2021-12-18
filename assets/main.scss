@@ -2,6 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$background-color:  #ffffff;  // Removed !default
+
 @import "{{ site.theme }}";
 
 .post img {
@@ -57,8 +59,6 @@
         padding-bottom:0 !important;
         padding-top:0 !important;
 }
-
-$background-color:  #ffffff !default;
 
 .codecell table { width: auto; }
 
