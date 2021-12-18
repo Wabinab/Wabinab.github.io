@@ -47,7 +47,7 @@
         border-left: 1px solid lightcoral;
 }
 .output_area pre {
-        border-left: 1px solid grey;
+        border-left: 1px solid lightgrey;
         margin-left: 1rem !important;
 }
 .codecell {
@@ -56,6 +56,11 @@
         margin-top:1rem !important;
         padding-bottom:0 !important;
         padding-top:0 !important;
+}
+
+.page-header {
+        color: #ffff;
+        background-color: #FFFFFF;
 }
 
 .codecell table { width: auto; }
