@@ -72,3 +72,19 @@ else                                 : grade = 'mark is not within range 0-100';
 Ok that's it. Why we're repeating the `(mark <= 100)`, because it's necessary. Try remove it and you'll see your program doesn't match your behavior. Example if we only have the first like to have this statement, if `marks = 120`, then the second statement will be True (120 > 60 is correct). That's why we need to restrict each and every single line to meet our expectations. 
 
 ## Noticed terms
+In particular, the researchers looked at the terms of "camel with two humps". Those that are in the *inconsistent* group scores lower than those with the *consistent* group. However, one looked at the sentence **everyone either become consistent or inconsistent in the second test. No blank returns.**
+
+To understand this question, let's understand a bit about the test. The question like the question above (and some other ways of representing questions, be it multiple choices, or fill in the blanks or whatever) is assigned to the students first time before they wrote any program, and then once again 3 weeks into the programming course. (One isn't sure whether the question is asked several times in the same test in a different manner to test for consistency though). At least, those whom doesn't change their mental representation by answering the questions exactly the same are called the **consistent** group. Those whom changes their mental representation by answering the questions different from the first time is the **inconsistent** group. And then those whom did not answer anything, doesn't give a damn about it, is called the **blank** group. 
+
+**Note:** One couldn't give you an idea of what the test looks like as one doesn't know either. So one won't discuss in depth, and be careful with what one wrotes as well to read out any imposed stuffs that one wrote subconsciously. 
+
+Hence, at the second test, people whom don't give a damn at first, either move to become inconsistent or become consistent (one isn't sure how blank can become inconsistent or consistent either since it's the first test that carry forward to determine the second. Perhaps it's from some other questions that they answered, and only leave blank for some question. But one doesn't know). And then there also said that **inconsistent might become consistent** as well. One also doesn't know how this is tested, perhaps from other exams since this test is administered to their class students. 
+
+Now this is important because it signifies that **we can actually learn how to program, given that we changes our mental model representation.** There's no labelling of programming sheeps, and no-programming goats. **What really matters is you're willing to change your mental model.**
+
+But changing mental model isn't easy. It's like asking you to change what you previously belief. To see why, read this book: [Black Box Thinking by Matthew Syed](https://www.amazon.com/Black-Box-Thinking-People-Mistakes-But/dp/1591848229). 
+
+In brief, things like you're not willing to accept your mistakes, you're not willing to change what you believe, stereotypes cannot be put down, are all mental representations (this is **one's opinion, do not treat them as scientific reasonings!**) that resides in whether you're willing to change or not. And the same goes to this programming to change mental representation. 
+
+Second thing is how to stay consistent with the mental representation. Now this is the "stubborn" side of thing to just believe it as it is. You must not accept your mistakes that kind of thing. Though this sounds wrong in terms of other conditionings (like why won't you accept your mistakes when you know they're your mistakes to change for the better), but at least in terms of programming that it is. Unless that particular programming language have a different representation, being consistent allows you to write a consistently working program. 
+
