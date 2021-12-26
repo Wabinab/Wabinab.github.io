@@ -99,3 +99,12 @@ And that's it for today.
 
 ## Conclusion
 Programming for novice is more of a mental representation problem rather than knowledge/expertise problem. Only after you break through the assignment and sequence hurdles, get hold of it, then it starts become knowledge/expertise problem. 
+
+### One last thing
+This has nothing to do with the content, just to talk a little bit about **requiring proofs**. Yes, proofs are important in some sense, in some situation. Proof is what made something equal and fair for people when you go to court, proofs is what makes a theory stays important. 
+
+But for other situations? Proof is not that important. Opinions are. Proof is optimized for logical reasoning. Opinions are optimized for <u>happiness</u>. If you need proof in things that are opinionated, one guesses (or hypothesize in the scientific term) that you live a miserable life. No, you yourself are happy with how you live, you love the proofs. But others find you miserable. Perhaps two people whom optimized for logic can live together, but most people aren't optimized for logic. Most people are opinionated. 
+
+And imagine that you are about to get married tomorrow, and you need prove that your partner loves you, and solid proof you need. What are the metrics to measure your partner loves you (classification), and what on the scale does (s)he loves you (regression)? And perhaps you ask your partner to sit down and solidifies it into number, close their eyes, access their brains, their hearts, and give you a number. Proofs! 
+
+Conclusion: Sometimes, things don't have to be explain. Nor do you have to believe in everything. Skeptical is good, but happiness is equally important (or even more). (**Be wary of the `because` you use in conversations, each and every sentence, in recursive manner**). 
