@@ -88,3 +88,16 @@ In brief, things like you're not willing to accept your mistakes, you're not wil
 
 Second thing is how to stay consistent with the mental representation. Now this is the "stubborn" side of thing to just believe it as it is. You must not accept your mistakes that kind of thing. Though this sounds wrong in terms of other conditionings (like why won't you accept your mistakes when you know they're your mistakes to change for the better), but at least in terms of programming that it is. Unless that particular programming language have a different representation, being consistent allows you to write a consistently working program. 
 
+## Three (semantic) hurdles of programming
+The following are 3 hurdles, ordered in the way they are met from starting to program journey. Note the following applies to **imperative programming**. Check the difference between imperative and declarative [in this explanation](https://docs.microsoft.com/en-us/answers/questions/211050/declarative-vs-imperative-language.html#:~:text=Declarative%20programming%20is%20a%20programming,friend%20to%20fix%20your%20car.)
+
+1. Assignment and sequence
+2. Recursion or iteration.
+3. Concurrency.
+
+> What is mentioned in the article is the first hurdle: **assignment and sequence**. This is where the test for mental representation lies. The others are more easily seen in **low-level programming language**. Example, **recursion or iteration** requires a set of mental models in mind of how it works, particularly because there are lots of loops that are available to choose, like `for` loop, `while` loop, `do-while` loop, etc that works somewhat differently to each other. This is both a hurdle in high-level and low-level programming language. And the final is the **concurrency** programming. Well, most programmers doesn't reach this stage until they're advanced enough. In one's experience, **high-level** programming language makes this easy to deal with, be it multiprocessing or threading. Example is *Python's `joblib` library*. Though, Python's own `threading` and `multiprocessing` library aren't that easy to dealt with though, and one oneself only used the multiprocessing library so one can't say much about how threading works. Furthermore, one isn't even sure one handles multprocessing correctly previously, though what one wants it to work does work, it might not be the best way to program concurrency. 
+
+And that's it for today. 
+
+## Conclusion
+Programming for novice is more of a mental representation problem rather than knowledge/expertise problem. Only after you break through the assignment and sequence hurdles, get hold of it, then it starts become knowledge/expertise problem. 
