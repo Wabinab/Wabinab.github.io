@@ -8,9 +8,7 @@ One would like to mention several things in the research paper before we start t
 
 First, the author Richard **do not believe** in aptitude test for programming, nor do he believe in programming sheep and non-programming goats. In one's opinion, this might have been true. In fact, if one isn't mistaken, one would be partly the "non-programming goats" before and nowadays one programs quite a lot (no reasoning though, it's been a long time since one started programming and one can't really recall whether this statement is True or False anymore). And one believes so. 
 
-<p class="callout success">
-  Programming is a mental state problem, and if you could change your mental state, you can program. Non-programming goats not need stay goats all the way. 
-</p>
+> Programming is a mental state problem, and if you could change your mental state, you can program. Non-programming goats not need stay goats all the way. 
 
 ## The argument
 Note that these are things that one extracted based on one's focus. Particularly, when one was reading, those that doesn't catch my mind goes filtered out almost immediately, and the first thing that get caught was (rephrased):
@@ -95,7 +93,7 @@ The following are 3 hurdles, ordered in the way they are met from starting to pr
 2. Recursion or iteration.
 3. Concurrency.
 
-> What is mentioned in the article is the first hurdle: **assignment and sequence**. This is where the test for mental representation lies. The others are more easily seen in **low-level programming language**. Example, **recursion or iteration** requires a set of mental models in mind of how it works, particularly because there are lots of loops that are available to choose, like `for` loop, `while` loop, `do-while` loop, etc that works somewhat differently to each other. This is both a hurdle in high-level and low-level programming language. And the final is the **concurrency** programming. Well, most programmers doesn't reach this stage until they're advanced enough. In one's experience, **high-level** programming language makes this easy to deal with, be it multiprocessing or threading. Example is *Python's `joblib` library*. Though, Python's own `threading` and `multiprocessing` library aren't that easy to dealt with though, and one oneself only used the multiprocessing library so one can't say much about how threading works. Furthermore, one isn't even sure one handles multprocessing correctly previously, though what one wants it to work does work, it might not be the best way to program concurrency. 
+What is mentioned in the article is the first hurdle: **assignment and sequence**. This is where the test for mental representation lies. The others are more easily seen in **low-level programming language**. Example, **recursion or iteration** requires a set of mental models in mind of how it works, particularly because there are lots of loops that are available to choose, like `for` loop, `while` loop, `do-while` loop, etc that works somewhat differently to each other. This is both a hurdle in high-level and low-level programming language. And the final is the **concurrency** programming. Well, most programmers doesn't reach this stage until they're advanced enough. In one's experience, **high-level** programming language makes this easy to deal with, be it multiprocessing or threading. Example is *Python's `joblib` library*. Though, Python's own `threading` and `multiprocessing` library aren't that easy to dealt with though, and one oneself only used the multiprocessing library so one can't say much about how threading works. Furthermore, one isn't even sure one handles multprocessing correctly previously, though what one wants it to work does work, it might not be the best way to program concurrency. 
 
 And that's it for today. 
 
