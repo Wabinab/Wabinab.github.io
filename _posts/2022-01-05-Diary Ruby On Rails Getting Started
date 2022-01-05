@@ -1,0 +1,43 @@
+One am working on learning Ruby on Rails currently, and there are some problems that are met. This post serves as a diary to conclude what errors are being made, and how they are solved. We might or might not include the thought process of solving them, and they might or might not include the only method to solve, and some might or might not be necessary to solve the problem. 
+
+### Destroy not working
+The first thing after the CRUD, we have the Destroy link not working. Particularly, we tried quite a number of stuffs, especially we make comparison with the `rails generate scaffold ...` and copy and paste one by one and see what they gives. 
+
+We changed things in the `articles_controller.rb` to support json file for `delete` and `create` but to no avail. The thing still doesn't change much. Finally, only when we changed our `show.html.erb` file to some other things then only it's solved. Particularly, we moved the destroy outside into their own dividers rather than inside the list. 
+
+Before:
+```erb
+<h1><%= @article.title %></h1>
+
+<p><%= @article.body %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_article_path(@article) %></li>
+  <li><%= link_to "Destroy", @article , 
+                        method: :delete, 
+                        data: { confirm: 'Are you sure?' } %></li>
+  <li><%= link_to "Home", root_path %></li>
+</ul>
+```
+
+After:
+```erb
+<h1><%= @article.title %></h1>
+
+<p><%= @article.body %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_article_path(@article) %></li>
+  <li><%= link_to "Home", root_path %></li>
+</ul>
+
+<div>
+<%= button_to "Destroy", @article , 
+                        method: :delete, 
+                        data: { confirm: 'Are you sure?' } %>
+</div>
+```
+
+Violà it works! **Though a caveat**, even the `scaffold` generated does not show the `confirm` part (no pop-up, no confirmation being displayed), so that part one doesn't know what happens with it. It might be due to OS, installation problem, or some other thing. 
+
+And why it works when moving out of the list? One have no idea. It just works. You could also try to use `link_to` instead of `button_to` in the latter ones, it might work as well, one aren't sure about that. Basically it looks more like just how to display it. You can also use `button_to` in the non-working ones, and it also display a button, and it still doesn't work until you move it out. 
