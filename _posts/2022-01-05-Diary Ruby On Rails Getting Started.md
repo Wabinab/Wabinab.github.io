@@ -1,5 +1,16 @@
 One am working on learning Ruby on Rails currently, and there are some problems that are met. This post serves as a diary to conclude what errors are being made, and how they are solved. We might or might not include the thought process of solving them, and they might or might not include the only method to solve, and some might or might not be necessary to solve the problem. 
 
+### Syntax error: expecting do or '{' or '('
+This happens in the `article.rb`. Originally we have the code: 
+
+```ruby
+class Article < ApplicationRecord
+  validates :title, presence :title, length: {minimum: 5}
+end
+```
+
+And it gives error. However, the question is solved [here in this article](https://stackoverflow.com/questions/59519945/ruby-on-rails-syntax-error-unexpected-tsymbeg-expecting-do-or-or). Particularly, the colon before **true** must **stick to presence rather than stick to true**, `presence: true` than `presence :true`. 
+
 ### Destroy not working
 The first thing after the CRUD, we have the Destroy link not working. Particularly, we tried quite a number of stuffs, especially we make comparison with the `rails generate scaffold ...` and copy and paste one by one and see what they gives. 
 
