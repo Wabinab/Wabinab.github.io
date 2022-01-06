@@ -55,3 +55,21 @@ And why it works when moving out of the list? One have no idea. It just works. Y
 
 ### Where do partials go
 the `.html.erb` files don't necessarily always go into the same folder, but they are in the same **grandparent folder**. So for example, comments don't go into the usual article folder, but they go into the comments folder. And also check whether the naming is correct, particularly add or remove an 's' from the erb file. 
+
+## Cannot add or delete comments
+There are nothing specific arises, but if you check the log of `rails server`, you found 404 not found. 
+
+Particularly, that's because we have some errors (not the tutorial, but when one type it in) with `app/controllers/comments_controller.rb`). 
+
+Instead of this: 
+
+```ruby
+@article = Article.find(params[:article_id])
+```
+
+we have this: 
+```ruby
+@article = Article.find(params[:id])
+```
+
+We need to fetch in the correct id for it to work. Or else, we cannot delete or create. 
