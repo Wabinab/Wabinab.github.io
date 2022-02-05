@@ -47,5 +47,5 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: coderay
-  use_coderay: true
+  enable_coderay: true
   
