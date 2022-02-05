@@ -8,7 +8,6 @@
 
 url: "https://wabinab.github.io"
 # repository: Wabinab/Wabinab.github.io
-repository: https://oauth2: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@github.com/Wabinab/Wabinab.github.io
 
 title: Here we go!
 description: Blogging and Projects hosting. 
@@ -49,4 +48,9 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: coderay
   enable_coderay: true
+ 
+deploy:
+  type: git
+  repository: https://oauth2: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@github.com/Wabinab/Wabinab.github.io
+  branch: master
   
