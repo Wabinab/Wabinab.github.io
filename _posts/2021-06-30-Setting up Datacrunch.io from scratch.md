@@ -157,3 +157,9 @@ Connection of second hard drive proven not working. Although it can be discovere
 If you get the choice to choose XSession and Ubuntu (which is very rare, encountered once and un-replicable thereafter) after you install the file manager you can click on Other location and type "ssh://<your-public-ip-address>" which would redirect you to the login screen to enter username and password. By default, this would mount the main folder. Direct yourself to "home" to find the usual directory from there. 
     
 However, these all requires root permission to access, hence the best way is to use SSHFS to connect to it. There is a really good article written on how to do this [here](https://www.redhat.com/sysadmin/sshfs). Check it out! Now after this, you can access it with full permission (i.e. without root). However, the connection is proven to be quite slow, hence editing inside you machine before moving out might be the best choice. Store your data somewhere else and stream them into temporary storage while training would freed you from requiring storage large amount of data, at the price of slower streaming speed. 
+
+   
+### Edit 17 February 2022
+There are some changes to the installation command, as the site changes it, hence one changes it. Nevertheless we still uses Cinnamon as the installation. There are now more support than just Cinnamon and Xfce (like Gnome, Gnome Classic, and KDE Plasma); however one tries Gnome it says "cannot find package" so one give up immediately and just resort to the classic Cinnamon. However if you would like to try out others, you can and would need to figure it out from the [original website](https://cloud.google.com/architecture/chrome-desktop-remote-on-compute-engine) yourself. 
+   
+   Thanks for reading. 
