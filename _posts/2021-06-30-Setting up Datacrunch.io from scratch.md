@@ -61,13 +61,13 @@ sudo apt-get install --assume-yes ./chrome-remote-desktop_current_amd64.deb
 sudo DEBIAN_FRONTEND=noninteractive \
     apt install --assume-yes cinnamon-core desktop-base dbus-x11
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/cinnamon-session-cinnamon2d" > /etc/chrome-remote-desktop-session'
+sudo systemctl disable lightdm.service
 ```
 
 Optionally
 ```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg --install google-chrome-stable_current_amd64.deb
-sudo apt install --assume-yes --fix-broken
+sudo apt install --assume-yes ./google-chrome-stable_current_amd64.deb
 ```
 
 Next, create a new user. **You will need a user because the next step that follows fails to install on root**. 
