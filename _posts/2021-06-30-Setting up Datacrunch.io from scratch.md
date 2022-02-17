@@ -53,14 +53,18 @@ Optional installation that is included in the script below:
 Run the script: (for Linux installation) (Depending on internet speed, this might takes a while to download. Up till now it wasn't too slow to download these files and set them up on datacrunch. The exact time wasn't recorded). 
 ```bash
 sudo apt update
-sudo apt-get install --assume-yes wget
+sudo apt install --assume-yes wget tasksel
+[[ $(/usr/bin/lsb_release --codename --short) == "stretch" ]] && \
+   sudo apt install --assume-yes libgbm1/stretch-backports
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
-sudo dpkg --install chrome-remote-desktop_current_amd64.deb
-sudo apt install --assume-yes --fix-broken
+sudo apt-get install --assume-yes ./chrome-remote-desktop_current_amd64.deb
 sudo DEBIAN_FRONTEND=noninteractive \
-    apt install --assume-yes cinnamon-core desktop-base
+    apt install --assume-yes cinnamon-core desktop-base dbus-x11
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/cinnamon-session-cinnamon2d" > /etc/chrome-remote-desktop-session'
+```
 
+Optionally
+```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
