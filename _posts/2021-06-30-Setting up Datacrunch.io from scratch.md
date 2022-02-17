@@ -64,10 +64,23 @@ sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/cinnamon-session-cinnamon2d"
 sudo systemctl disable lightdm.service
 ```
 
-Optionally
+Optionally install google chrome
 ```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes ./google-chrome-stable_current_amd64.deb
+```
+
+But one suggests installing Brave Browser instead. No marketing here, your choice to use which one you want. 
+```bash
+sudo apt install --assume-yes apt-transport-https curl
+
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+
+sudo apt install --assume-yes brave-browser
 ```
 
 Next, create a new user. **You will need a user because the next step that follows fails to install on root**. 
