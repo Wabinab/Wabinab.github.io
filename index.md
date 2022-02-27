@@ -2,6 +2,9 @@
 
 Low-key-ly blogging about anything. For best viewing experience, 125% zoom in is recommended. 
 
-One also blogs on medium: https://wabinab.medium.com/ Check it out! 
+One also blogs on:
+Medium: https://wabinab.medium.com/ 
+Publish0x: https://www.publish0x.com/@wabinab
+Check it out! 
 
 Have a nice day! 
