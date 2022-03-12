@@ -77,6 +77,37 @@ We need to fetch in the correct id for it to work. Or else, we cannot delete or 
 ## Bootstrap
 Bootstrap is different from Rails 6. First, you need ruby v3 which cannot be installed with normal sudo, but requires rvm to do the work. If you type `rvm use ruby-3.0.3` it will tell you the command to. Then, you can continue with [this video](https://www.youtube.com/watch?v=uiLAPHPdAis) for tutorial. 
 
+Though you can add css bootstrap to current files, it might fail. As one did, it fails with `yarn build:css` NoMethodError. And one couldn't solve it properly, hence rebuilding from start is the best method. 
+
+If you are looking at Michael Hartl v6 tutorial (not the most current, but the book from archive which is quite old), there are some problem with the bootstrap. Specifically, the bootstrap I think it changes, so some classes no longer available. For example this: 
+
+```erb
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "sample_app", '#', id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right me-auto mb-2 mb-lg-0"> 
+            <li class="nav-item"><%= link_to "Home",    '#' %></li>
+            <li class="nav-item"><%= link_to "Help",    '#' %></li>
+            <li class="nav-item"><%= link_to "Log in",  '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+```
+
+This no longer works. First, `navbar-inverse` is not even a class anymore, it's replaced with `navbar-dark bg-dark`. Etc. When one complete the migration one will make changes here (which one haven't yet). 
+
+#TODO
+
+## ERb requires class before id
+Make sure to put class before id when using ERb. Let's see an example:
+
+```erb
+<%= link_to"sample_app", '#', class: "navbar-brand", id: "logo" %>
+```
+
+will work, but if you go the other way round, it won't. Compilation will fail (at least that's what one encounters. If it changes in the future, please do tell me, thanks!)
 
 
 
