@@ -73,3 +73,6 @@ we have this:
 ```
 
 We need to fetch in the correct id for it to work. Or else, we cannot delete or create. 
+
+## Bootstrap
+Bootstrap is different from Rails 6. First, you need ruby v3 which cannot be installed with normal sudo, but requires https://github.com/postmodern/ruby-install#readme to do the work. Then, you can continue with [this video](https://www.youtube.com/watch?v=uiLAPHPdAis) for tutorial. 
