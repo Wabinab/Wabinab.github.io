@@ -96,7 +96,7 @@ If you are looking at Michael Hartl v6 tutorial (not the most current, but the b
     </header>
 ```
 
-This no longer works. First, `navbar-inverse` is not even a class anymore, it's replaced with `navbar-dark bg-dark`. Etc. When one complete the migration one will make changes here (which one haven't yet). 
+This no longer works. First, `navbar-inverse` is not even a class anymore, it's replaced with `navbar-dark bg-dark`. Etc. When one complete the migration one will make changes here (which one haven't yet). One guesses its Bootstrap 4 above, and we require updating to Bootstrap 5, hence class changes. 
 
 #TODO
 
