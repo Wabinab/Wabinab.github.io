@@ -123,5 +123,10 @@ Make sure to put class before id when using ERb. Let's see an example:
 
 will work, but if you go the other way round, it won't. Compilation will fail (at least that's what one encounters. If it changes in the future, please do tell me, thanks!)
 
+## SCSS coloring
+Because we want the container to have a gray background, we made a CSS for it in the `application.bootstrap.scss`. However, one tested it and doesn't work. (The test is not extensive, it may be one inserting the wrong command, because css requires rebuilding with a series of commands which one tested in parallel and only come to conclusion at the end of testing this too, so that may be a reason why it doesn't built). 
 
+**The solution being put in another scss file and import it into `application.bootstrap.scss`**. 
+
+Another being the background color, we couldn't use common colors like `white`, `orange`, it doesn't seem to work. It may be because one put the `!important` tag, but it may be not. Whatever the reason is, **the solution is to use `background-color: rgba(128, 128, 128, 0.1) !important;`** that kind of definition for example, example for light-gray background. 
 
