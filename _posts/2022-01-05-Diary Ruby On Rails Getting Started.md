@@ -96,9 +96,23 @@ If you are looking at Michael Hartl v6 tutorial (not the most current, but the b
     </header>
 ```
 
-This no longer works. First, `navbar-inverse` is not even a class anymore, it's replaced with `navbar-dark bg-dark`. Etc. When one complete the migration one will make changes here (which one haven't yet). One guesses its Bootstrap 4 above, and we require updating to Bootstrap 5, hence class changes. 
+This no longer works. First, `navbar-inverse` is not even a class anymore, it's replaced with `navbar-dark bg-dark`. Etc. When one complete the migration one will make changes here (which one haven't yet). **One guesses its Bootstrap 4 above, and we require updating to Bootstrap 5**, hence class changes. 
 
-#TODO
+```erb
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <%= link_to"sample_app", '#', class: "navbar-brand", id: "logo" %>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+      <ul class="nav navbar-nav navbar-right me-auto mb-2 mb-lg-0"> 
+        <li class="nav-item"><%= link_to "Home",    '#', class: "nav-link active"%></li>
+        <li class="nav-item"><%= link_to "Help",    '#', class: "nav-link active" %></li>
+        <li class="nav-item"><%= link_to "Log in",  '#', class: "nav-link active" %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+```
 
 ## ERb requires class before id
 Make sure to put class before id when using ERb. Let's see an example:
