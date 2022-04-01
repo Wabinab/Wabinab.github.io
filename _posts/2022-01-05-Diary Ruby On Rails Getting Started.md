@@ -77,7 +77,7 @@ We need to fetch in the correct id for it to work. Or else, we cannot delete or 
 ## Bootstrap
 Bootstrap is different from Rails 6. First, you need ruby v3 which cannot be installed with normal sudo, but requires rvm to do the work. If you type `rvm use ruby-3.0.3` it will tell you the command to. Then, you can continue with [this video](https://www.youtube.com/watch?v=uiLAPHPdAis) for tutorial. 
 
-Though you can add css bootstrap to current files, it might fail. As one did, it fails with `yarn build:css` NoMethodError. And one couldn't solve it properly, hence rebuilding from start is the best method. 
+Though you can add css bootstrap to current files, it might fail. As one did, it fails with `yarn build:css` NoMethodError. So there are two ways to solve the problem: one is rebuilding from the beginning using `rails new name_of_project --css=bootstrap`, another being manually add the `build:css` function to `package.json`. The command will require you to run `rails new some_name --css=bootstrap`, copy the package.json build:css command from there, delete that project, then paste to the package.json you have. (As of rails v7.0.2.3). In the future, this might not require if they discover the bug and fix it. 
 
 If you are looking at Michael Hartl v6 tutorial (not the most current, but the book from archive which is quite old), there are some problem with the bootstrap. Specifically, the bootstrap I think it changes, so some classes no longer available. For example this: 
 
