@@ -130,3 +130,7 @@ Because we want the container to have a gray background, we made a CSS for it in
 
 Another being the background color, we couldn't use common colors like `white`, `orange`, it doesn't seem to work. It may be because one put the `!important` tag, but it may be not. Whatever the reason is, **the solution is to use `background-color: rgba(128, 128, 128, 0.1) !important;`** that kind of definition for example, example for light-gray background. 
 
+## Wrong migration?
+We did something wrong. Migration of database done on heroku, then we realize upload wrong, requires remigration. However, one of the migration is a conflicting migration we need to delete. If we don't, we have to push to heroku, rollback, then change branch re-push to heroku, then migrate up again. Ok with that? 
+
+If not, another way is to destroy the database (it may work with reset, one don't know) by going to your heroku webpage, then click on app name, check for postgresql, open it up in new page, destroy database. After destroy, recreate it. Then, run `heroku run rails db:migrate`. Voilà! 
