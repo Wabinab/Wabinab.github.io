@@ -167,6 +167,8 @@ When you loop through a `link_to`, you can add the class there, and everything t
 }
 ```
 
+Note there are some we put at the top-level scss. These are those that make changes to the `link_to` directly. Previously if you're in `a`, you would put it in there, but that cannot change `link_to` directly. **Every single class inside will be overwritten with `link_to` class, wherever it wraps till the "end" tag**. If you define another class for say the `p` element, it won't work. You must put the `p` related to `article` for it to work. 
+
 Then the ERb:
 ```erb
 <%= link_to article[:target], class: "article" do %>
