@@ -134,3 +134,47 @@ Another being the background color, we couldn't use common colors like `white`, 
 We did something wrong. Migration of database done on heroku, then we realize upload wrong, requires remigration. However, one of the migration is a conflicting migration we need to delete. If we don't, we have to push to heroku, rollback, then change branch re-push to heroku, then migrate up again. Ok with that? 
 
 If not, another way is to destroy the database (it may work with reset, one don't know) by going to your heroku webpage, then click on app name, check for postgresql, open it up in new page, destroy database. After destroy, recreate it. Then, run `heroku run rails db:migrate`. Voilà! 
+
+---
+## Styling `link_to`
+When you loop through a `link_to`, you can add the class there, and everything that's wrap inside don't need manual declaration of class. For the CSS, you can just make one single class. 
+
+```scss
+.article {
+  color: #000;
+  text-decoration: none;
+  
+  div {
+    background-color: #eee;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  li {
+    border: 1px solid green;
+    background-color: rgba(127, 127, 127, 0.075) !important;
+    border-right: -3em;
+    
+    &:hover {
+      background-color: rgba(250, 190, 88, 0.35) !important;
+    }
+  }
+}
+```
+
+Then the ERb:
+```erb
+<%= link_to article[:target], class: "article" do %>
+  <ul>
+    <li>
+      <h4><%= article[:title] %></h4>
+      <p><%= article[:explanation] %></p>
+    </li>
+  </ul>
+<% end %>
+```
