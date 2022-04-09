@@ -194,3 +194,8 @@ To solve, just do this:
 ```
 
 where you can replace the `render form` part with the actual code of your form if it's in a single place. 
+
+## `has-error` bootstrap
+That has deprecated on v3; so we know that the course one is looking at is using Bootstrap v3. Rather, now we don't need to override the `.field_with_errors` anymore for `.has-error`. 
+
+Anyways; we don't need to anything; plus it uses `.is-invalid` nowadays and there are `form-control.is-invalid` already in place for red text. No override is needed. 
