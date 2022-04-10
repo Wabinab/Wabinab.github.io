@@ -184,16 +184,17 @@ Then the ERb:
 ```
 
 ## Turbo Error with Forms
-There's an error with forms discussed here: [https://github.com/hotwired/turbo-rails/issues/12](https://github.com/hotwired/turbo-rails/issues/12)
+There's an error with forms discussed here: [https://github.com/hotwired/turbo-rails/issues/12](https://github.com/hotwired/turbo-rails/issues/12). However, the method discuss there does work when we have an errors and use `render 'new'` with a POST request. However, it fails if we want to `redirect_to @user` page because it's a GET request instead. What we need is to deactivate turbo. The solution is [here](https://stackoverflow.com/questions/70400958/error-form-responses-must-redirect-to-another-location)
 
-To solve, just do this: 
+Just change your form: 
+
 ```erb
-<%= turbo_frame_tag "post" do %>
-  <%= render 'form', post: @post %>
+<%= form_with model: @user, local: true, data: { turbo: false } do |f| %>
+...
 <% end %>
 ```
 
-where you can replace the `render form` part with the actual code of your form if it's in a single place. 
+Note the `turbo: false` part. 
 
 ## `has-error` bootstrap
 That has deprecated on v3; so we know that the course one is looking at is using Bootstrap v3. Rather, now we don't need to override the `.field_with_errors` anymore for `.has-error`. 
