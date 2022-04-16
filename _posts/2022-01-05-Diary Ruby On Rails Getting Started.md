@@ -200,3 +200,13 @@ Note the `turbo: false` part.
 That has deprecated on v3; so we know that the course one is looking at is using Bootstrap v3. Rather, now we don't need to override the `.field_with_errors` anymore for `.has-error`. 
 
 Anyways; we don't need to anything; plus it uses `.is-invalid` nowadays and there are `form-control.is-invalid` already in place for red text. No override is needed. 
+
+## Integration test error
+The usual integration test `assert_difference` (and `assert_no_difference`) have this:
+
+```ruby
+post users_path, params: { user: ...} 
+```
+
+Problem is the comma between `users_path` and `params`. Upon removal of that comma, things works! 
+
