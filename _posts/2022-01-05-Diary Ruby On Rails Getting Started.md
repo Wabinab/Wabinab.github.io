@@ -210,3 +210,34 @@ post users_path, params: { user: ...}
 
 Problem is the comma between `users_path` and `params`. Upon removal of that comma, things works! 
 
+## Database postgresql production error
+If you follow M Hartl book, there they determine the database with some name; however that's not true; we also don't have the specific environment variable as such, only one DATABASE_URL. Hence, we need to extract data into that. 
+
+First, in `config`, we create `config/database_helper.rb` and include the following class: 
+
+```ruby
+class String
+  def string_between marker1, marker2
+    self[/#{Regexp.escape(marker1)}(.*?)#{Regexp.escape(marker2)}/m, 1]
+  end
+end
+```
+
+This is use for string extraction. Then, in the `config/database.yml`, add the following: 
+
+```yaml
+<% require_relative 'database_helper' %>
+
+...
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: <%= ENV['DATABASE_URL'].split('/').last %>
+  username: <%= ENV['DATABASE_URL'].string_between("postgres://", ":") %> 
+  password: <%= ENV['DATABASE_URL'].string_between(":", "@").partition(":").last %>
+```
+
+This allow us to connect to the correct database, not hanging around hence **having some 500 Internal Server Error that doesn't explain itself** (which is actually due to connection with database not established). 
+
