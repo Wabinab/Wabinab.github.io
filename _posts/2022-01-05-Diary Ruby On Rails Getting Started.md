@@ -264,4 +264,8 @@ If you don't mind red wordings, you can also do this:
 <%= simple_format debug(params.to_unsafe_h).to_yaml if Rails.env.development? %>
 ```
 
+# How to know what parameters we see? 
+
+Easiest is just **at the controller, make `render 'new'`**. This allows after typing in something to the form, it'll reload the page with the `params`, then we know what are available in the `params` to pass to Rails backend. 
+
 
