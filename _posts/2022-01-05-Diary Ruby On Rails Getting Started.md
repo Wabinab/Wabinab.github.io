@@ -227,6 +227,7 @@ This is use for string extraction. Then, in the `config/database.yml`, add the f
 
 ```yaml
 <% require_relative 'database_helper' %>
+<% @db_url = ENV['DATABASE_URL'] %>  # to shorten the name
 
 ...
 
@@ -234,10 +235,15 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: <%= ENV['DATABASE_URL'].split('/').last %>
-  username: <%= ENV['DATABASE_URL'].string_between("postgres://", ":") %> 
-  password: <%= ENV['DATABASE_URL'].string_between(":", "@").partition(":").last %>
+  database: <%= @db_url.split('/').last if @db_url %>
+  username: <%= @db_url.string_between("postgres://", ":") if @db_url %> 
+  password: <%= @db_url.string_between(":", "@").partition(":").last if @db_url %>
 ```
 
 This allow us to connect to the correct database, not hanging around hence **having some 500 Internal Server Error that doesn't explain itself** (which is actually due to connection with database not established). 
+
+> **Note:** We added `if @db_url` at the end of each, because if it don't, it'll run during other times like `rails test` and things cannot continue running normally. We only want it to be assigned if it's available (in Heroku); otherwise we don't assign it. This is somewhat
+> hardcoding, but it doesn't matter. We will only use postgresql. If we need others like mysql, we'll make changes again then. Don't think too far! 
+
+
 
