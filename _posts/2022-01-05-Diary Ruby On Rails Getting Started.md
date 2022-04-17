@@ -245,5 +245,23 @@ This allow us to connect to the correct database, not hanging around hence **hav
 > **Note:** We added `if @db_url` at the end of each, because if it don't, it'll run during other times like `rails test` and things cannot continue running normally. We only want it to be assigned if it's available (in Heroku); otherwise we don't assign it. This is somewhat
 > hardcoding, but it doesn't matter. We will only use postgresql. If we need others like mysql, we'll make changes again then. Don't think too far! 
 
+## Debug information pretty print
+
+If you want it red wordings, we could do `simple_format`, such as this:
+
+```erb
+<%= simple_format debug(params).to_yaml if Rails.env.development? %>
+```
+
+If you want it beautifully formatted, we should consider using `pp` like this:
+```erb
+<%= pp debug(params.to_unsafe_h) if Rails.env.development? %>
+```
+
+If you don't mind red wordings, you can also do this: 
+
+```erb
+<%= simple_format debug(params.to_unsafe_h).to_yaml if Rails.env.development? %>
+```
 
 
