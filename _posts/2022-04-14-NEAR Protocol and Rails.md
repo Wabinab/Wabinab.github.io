@@ -49,3 +49,7 @@ Currently we have everything in Javascript itself. We could have move some stuff
 Another thing is, in the current project, we manually define specific `id` for the input field, then we use `document.getElementById(...).value` to fetch them. **Actually, `form_with` already define an `id` for us, so we could just use that `id` instead of self-defining one**. So that's another change we will make next time. 
 
 Third, js.erb is used in controllers, [explained by Joel Christiansen here](https://joelc.io/ajax-ruby-on-rails-forms); we don't know if we could move it to the helper. It really needs multiple function, and the logic should be in helper, not in controller. 
+
+If there are anything we could **benefit from js.erb, it's login feature**. Currently, login is actually a signup button which "login" in your browser, then requires clicking another button to save them to database. Perhaps with js.erb, we could 
+perform these two actions in a single click! It calls Rails to call the js.erb file; then do preprocessing afterwards. 
+We might have a separate controller for login, which may or may not be redundant; but we don't know until we experiment with it. 
