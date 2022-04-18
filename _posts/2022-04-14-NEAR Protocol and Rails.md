@@ -43,4 +43,9 @@ There's a master key that gets created when you first create the Rails app. It's
 
 (Ahh too much stuffs to write my brain can't remember everything). Will write again when one can remember something. 
 
+## 18 April 2022
+Currently we have everything in Javascript itself. We could have move some stuffs to js.erb files; but one doubt that could be put inside helper folder (one haven't try, but you can try); and one doubt we could make multiple functions inside one js.erb file. Hence, unless required (e.g. too many args to pass into one-liner `javascript:function_name(*args)`, we won't do that; it makes things more complicated. 
 
+Another thing is, in the current project, we manually define specific `id` for the input field, then we use `document.getElementById(...).value` to fetch them. **Actually, `form_with` already define an `id` for us, so we could just use that `id` instead of self-defining one**. So that's another change we will make next time. 
+
+Third, js.erb is used in controllers, [explained by Joel Christiansen here](https://joelc.io/ajax-ruby-on-rails-forms); we don't know if we could move it to the helper. It really needs multiple function, and the logic should be in helper, not in controller. 
