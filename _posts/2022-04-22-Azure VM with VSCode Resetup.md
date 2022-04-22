@@ -73,7 +73,8 @@ Just the final line needs specify a version. E.g. currently it's 3.1.1 so we do:
 rvm install ruby-3.1.1
 ```
 
-
+## Archiving
+Archival to Azure blob storage. This is totally lost; basically, tar gz the folder, upload the blob storage via some link that generates immediately when required, then delete the tar.gz file and the folder equally. This requires checking again and put inside `.my_custom_commands.sh` so we don't lose it next time. 
 
 ## Warnings
 Remember to setup Chrome Remote Desktop before you can't access it forever! 
