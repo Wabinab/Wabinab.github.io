@@ -67,6 +67,12 @@ npm i -g near-cli
 ## Install Ruby
 Ruby is installed by default, but it's not latest version. Hence, we install RVM from here: https://github.com/rvm/ubuntu_rvm
 
+Just the final line needs specify a version. E.g. currently it's 3.1.1 so we do:
+
+```bash
+rvm install ruby-3.1.1
+```
+
 
 
 ## Warnings
