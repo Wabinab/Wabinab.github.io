@@ -64,5 +64,10 @@ npm i -g near-cli
 
 **or any version number** it's updated to. 
 
+## Install Ruby
+Ruby is installed by default, but it's not latest version. Hence, we install RVM from here: https://github.com/rvm/ubuntu_rvm
+
+
+
 ## Warnings
 Remember to setup Chrome Remote Desktop before you can't access it forever! 
