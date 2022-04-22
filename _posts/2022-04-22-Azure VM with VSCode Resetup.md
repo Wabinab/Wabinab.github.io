@@ -36,6 +36,33 @@ In VSCode `settings.json`, add this line:
 }
 ```
 
+## Other installation
+Install Rust: Inside VM (so it can detect OS), go to rust-lang.org/tools/install. Otherwise, just use this commands: 
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+```
+
+Then install npm; but we'll use nvm to install npm: 
+
+First, download and **follow the instructions printed** from here: https://github.com/nvm-sh/nvm#installing-and-updating
+
+Next, 
+
+```bash
+nvm use 16
+node -v
+npm install -g npm
+```
+
+Then we can use npm to install whatever we want: For example: 
+
+```bash
+npm i -g near-cli
+```
+
+**or any version number** it's updated to. 
 
 ## Warnings
 Remember to setup Chrome Remote Desktop before you can't access it forever! 
