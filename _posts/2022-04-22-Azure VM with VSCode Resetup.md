@@ -44,6 +44,12 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 ```
 
+If you need librocksdb-sys for `near-sdk-sim` simulation tests, make sure to install it: 
+
+```bash
+sudo apt-get install -y clang
+```
+
 Then install npm; but we'll use nvm to install npm: 
 
 First, download and **follow the instructions printed** from here: https://github.com/nvm-sh/nvm#installing-and-updating
