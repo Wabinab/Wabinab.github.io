@@ -18,7 +18,7 @@ function create() {
 
 Then, we link it to `~/my_init_script.sh`: 
 
-```
+```bash
 #!/bin/bash
 
 source ~/.bashrc
@@ -26,3 +26,16 @@ source ~/.my_custom_commands.sh
 # binaryen wasm-opt here also via export PATH=...
 ```
 
+In VSCode `settings.json`, add this line: 
+```bash
+"terminal.integrated.profiles.linux": {
+  "bash": {
+    "path": "bash",
+    "args": ["--init-file", "~/my_init_script.sh"]
+  }
+}
+```
+
+
+## Warnings
+Remember to setup Chrome Remote Desktop before you can't access it forever! 
