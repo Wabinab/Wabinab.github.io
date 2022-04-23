@@ -268,4 +268,5 @@ If you don't mind red wordings, you can also do this:
 
 Easiest is just **at the controller, make `render 'new'`**. This allows after typing in something to the form, it'll reload the page with the `params`, then we know what are available in the `params` to pass to Rails backend. 
 
-
+## Be careful with routes
+When you do `get` or `post`, be careful of where it routes to. Usually, `post` goes to `name#create`; **don't put `name#new` instead!**. 
