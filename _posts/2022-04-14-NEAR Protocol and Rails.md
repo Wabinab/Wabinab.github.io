@@ -53,3 +53,6 @@ Third, js.erb is used in controllers, [explained by Joel Christiansen here](http
 If there are anything we could **benefit from js.erb, it's login feature**. Currently, login is actually a signup button which "login" in your browser, then requires clicking another button to save them to database. Perhaps with js.erb, we could 
 perform these two actions in a single click! It calls Rails to call the js.erb file; then do preprocessing afterwards. 
 We might have a separate controller for login, which may or may not be redundant; but we don't know until we experiment with it. 
+
+## 24 April 2022
+**Again! Check your routes!** We thought "get" always goes to `index`, but that's not true. Here, we want to get `new` as we want to mint something. We make a changes without properly testing it, so it starts failing in Heroku; **(worse,) we don't even notice it also fails locally!** 
