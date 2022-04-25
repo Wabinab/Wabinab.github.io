@@ -56,3 +56,5 @@ We might have a separate controller for login, which may or may not be redundant
 
 ## 24 April 2022
 **Again! Check your routes!** We thought "get" always goes to `index`, but that's not true. Here, we want to get `new` as we want to mint something. We make a changes without properly testing it, so it starts failing in Heroku; **(worse,) we don't even notice it also fails locally!** 
+
+Unfortunately, we haven't get the .js.erb to work yet. Perhaps try play with Josh C example, then slowly expand to some basic functions in custom.js, before we can further check how to expand again. 
