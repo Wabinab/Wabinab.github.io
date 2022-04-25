@@ -327,6 +327,7 @@ Particularly, `divider` class is now `dropdown-divider`, and don't forget `nav-i
 In Brave Browser, the responsive design mode is [Ctrl+Shift+m](https://community.brave.com/t/toggle-responsive-design-mode/158761/4) **when the developer console is open** (which you can open with F12 or Ctrl+Shift+i). 
 
 ## Mobile View Errors
+### Logo
 The first thing missing is the Logo. That's because of our `div` class tag, we added `collapse`. Removing it will reappear. 
 
 ```html
@@ -338,4 +339,13 @@ The first thing missing is the Logo. That's because of our `div` class tag, we a
 <div class="navbar-collapse">
 </div>
 ```
+
+But we could just remove it totally. 
+
+### Hamburger Menu
+There's one styling where we couldn't get the navbar icon on the right. So, we could just [copy from this page and see the difference](https://stackoverflow.com/questions/65894909/bootstrap-5-0-hamburger-menu-icon-doesnt-show-up).
+
+Particularly in one's case, it's because the `button` contains `class = "navbar-collapse"`, which shouldn't be. With `navbar-collapse`, not only mobile menu have the toggler button below the logo, when we expanded to 
+desktop page, the icon also doesn't go missing (which is not intended). Removing that `navbar-collapse` solves everything!
+
 
