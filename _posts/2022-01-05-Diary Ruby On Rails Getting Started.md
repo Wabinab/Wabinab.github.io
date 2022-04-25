@@ -323,4 +323,5 @@ Lots of the information are available on [bootstrap dropdown page](https://getbo
 
 Particularly, `divider` class is now `dropdown-divider`, and don't forget `nav-item` on each object (**excluding the `divider`**). 
 
-
+## Responsive Design Mode
+In Brave Browser, the responsive design mode is [Ctrl+Shift+m](https://community.brave.com/t/toggle-responsive-design-mode/158761/4) **when the developer console is open** (which you can open with F12 or Ctrl+Shift+i). 
