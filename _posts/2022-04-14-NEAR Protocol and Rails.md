@@ -70,3 +70,5 @@ post 'user', to: ...
 ```
 
 supposed be `users` not `user` (plural not singular). 
+
+Also for cards, make sure to `flex-wrap` so it can wrap around. 
