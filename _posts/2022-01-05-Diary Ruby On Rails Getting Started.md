@@ -317,3 +317,10 @@ end
 ```
 
 This invalidates the logout successfully. 
+
+## On the design dropdown
+Lots of the information are available on [bootstrap dropdown page](https://getbootstrap.com/docs/5.0/components/dropdowns/), so ensure you migrate. 
+
+Particularly, `divider` class is now `dropdown-divider`, and don't forget `nav-item` on each object (**excluding the `divider`**). 
+
+
