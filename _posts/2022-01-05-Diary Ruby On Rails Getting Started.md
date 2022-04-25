@@ -270,3 +270,50 @@ Easiest is just **at the controller, make `render 'new'`**. This allows after ty
 
 ## Be careful with routes
 When you do `get` or `post`, be careful of where it routes to. Usually, `post` goes to `name#create`; **don't put `name#new` instead!**. 
+
+## Log in, Log out
+When we logged in, we expect quitting the browser to forget; but no, Rails 7 have cookies on by default! WE can see this by checking the `session` info. 
+
+In application.html.erb: 
+
+```erb
+<%= simple_format debug(session).to_yaml if Rails.env.development? %>
+```
+
+Checking below, we see something like: 
+```
+@delegate={..., "user_id"=>...}
+```
+
+even after closing and re-opening the browser, stating that cookies are enabled by default! Hence, the user logout method won't work. 
+
+For Rails 7, due to Turbo, we cannot use `method: :delete` for DELETE request, it'll become GET request. Just to fix, use this instead: 
+
+```erb
+<%= link_to "Log out", logout_path, data: { "turbo-method": :delete}, class: "dropdown-item" %>
+```
+
+With the `turbo-method`, we can fix this. [Check this out](https://stackoverflow.com/questions/70474422/rails-7-link-to-with-method-delete-still-performs-get-request)
+
+Then, we also need to fill in our log out. Ensure to redirect to the correct page after logout is also required. 
+
+In sessions_controller.rb: 
+
+```ruby
+def destroy
+  log_out
+  redirect_to root_path, status: :see_other
+end
+```
+
+We need the `status: :see_other`, [check this out](https://github.com/rails/rails/issues/44170). 
+
+Our `log_out` is a function, in `sessions_helper.rb`: 
+
+```ruby
+def log_out
+  session[:user_id] = nil
+end
+```
+
+This invalidates the logout successfully. 
