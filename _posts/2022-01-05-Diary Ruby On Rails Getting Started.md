@@ -325,3 +325,17 @@ Particularly, `divider` class is now `dropdown-divider`, and don't forget `nav-i
 
 ## Responsive Design Mode
 In Brave Browser, the responsive design mode is [Ctrl+Shift+m](https://community.brave.com/t/toggle-responsive-design-mode/158761/4) **when the developer console is open** (which you can open with F12 or Ctrl+Shift+i). 
+
+## Mobile View Errors
+The first thing missing is the Logo. That's because of our `div` class tag, we added `collapse`. Removing it will reappear. 
+
+```html
+<!-- From this -->
+<div class="collapse navbar-collapse">
+</div>
+
+<!-- To this -->
+<div class="navbar-collapse">
+</div>
+```
+
