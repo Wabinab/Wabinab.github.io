@@ -348,4 +348,5 @@ There's one styling where we couldn't get the navbar icon on the right. So, we c
 Particularly in one's case, it's because the `button` contains `class = "navbar-collapse"`, which shouldn't be. With `navbar-collapse`, not only mobile menu have the toggler button below the logo, when we expanded to 
 desktop page, the icon also doesn't go missing (which is not intended). Removing that `navbar-collapse` solves everything!
 
-
+## Looking for Javascript?
+If we try to use a `create.js.erb` with `def create` in our controller, the form requires to **send an Ajax request**, which is only true if **remote option is set to true**. Otherwise, it won't react. 
