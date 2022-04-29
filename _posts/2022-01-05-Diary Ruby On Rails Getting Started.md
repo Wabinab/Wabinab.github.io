@@ -350,3 +350,12 @@ desktop page, the icon also doesn't go missing (which is not intended). Removing
 
 ## Looking for Javascript?
 If we try to use a `create.js.erb` with `def create` in our controller, the form requires to **send an Ajax request**, which is only true if **remote option is set to true**. Otherwise, it won't react. 
+
+## Heroku? 
+If you ever accidentally delete the remote of heroku for whatever stupid reason found online, you can init back from the "deploy" page on dashboard. Basically, create a **fresh new undeployed app then**:
+
+```bash
+cd my_project
+(git init)
+heroku git:remote -a heroku-app-name
+```
