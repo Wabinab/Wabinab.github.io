@@ -72,3 +72,6 @@ post 'user', to: ...
 supposed be `users` not `user` (plural not singular). 
 
 Also for cards, make sure to `flex-wrap` so it can wrap around. 
+
+## Javascript Controller with Stimulus
+Finally, we found out that js.erb deprecated in Rails 7 (in fact, it's deactivated due to security issues) in favor of Hotwire Stimulus, with Javascript Controller, directly from `app/javascript/controllers`. For examples, check [this article out](https://dev.to/bhumi/stimulus-rails-7-tutorial-5a6a). 
