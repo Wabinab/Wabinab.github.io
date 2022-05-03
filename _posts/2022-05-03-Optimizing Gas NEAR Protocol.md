@@ -87,6 +87,12 @@ pub fn donate_and_internal_mint(
 }
 ```
 
+## Transfer in one go
+We have a function called `minting_interface` that needs to mint multiple NFTs so it calls a `for` loop through the `donate_and_mint` function we have before; nothing else. 
+
+If we check the receipt, we see that for every single "transfer" we made, there's a receipt to transfer the rest of the gas back to whoever calling the function. Hence, to reduce gas, call the `Promise::new(...).transfer(...)` only once if everything is transferred to the same account! 
+The only reason we need multiple promises is each transfer is to different accounts; otherwise calling them aggregated together in one single promise reduces gas by reducing the receipt length. 
+
 ## Args and Kwargs: 
 They made a really small differences, consider these two functions: 
 
@@ -140,3 +146,9 @@ near call $CONTRACT no_param_fn '{}'  --accountId wabinab.testnet
 ```
 
 The gas used isn't too huge a difference. In fact, it uses extra 0.00001 Near, which just is negligible. Check out the transaction [for complicated function](https://explorer.testnet.near.org/transactions/8Af9smH4iv8pM9iCDZSKJ5ffP8H1dCzyPbPNtki5aznH) and [no param function](https://explorer.testnet.near.org/transactions/DcD3MrmWGrAEQW2GTN1x7p3b6qA9fidUinFN5nrdaqdX) here. 
+
+
+## What maths you think is complicated isn't really that complicated
+Assuming gas cost is proportional to computation time, what you think is complicated isn't really that complicated to the computer. Consider trying it locally first; if it takes immediately to get an answer, it isn't complicated to the computer. 
+
+
