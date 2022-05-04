@@ -27,6 +27,9 @@ function create_rb() {
 
 
 # archive to online
+# use archive FOLDER_NAME 'blob_http'
+# make sure it's FOLDER_NAME not FOLDER_NAME/ (slash)
+# make sure blob_http is wrapped around ''. 
 function archive() {
   tar -czf $1.tar.gz $1
   rm -rf $1/
