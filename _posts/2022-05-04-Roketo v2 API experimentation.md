@@ -11,6 +11,7 @@ That creates the stream.
 Then, we could view all with `get_account_outgoing_streams`. For receiver, that's `get_account_incoming_streams`. However, if we want to view the last created ones, we 
 should check `get_account` and there's a field for "last created stream". 
 
-If the receiver hasn't registered, `pause_stream` raises an exception. 
+If the receiver hasn't registered the tokens, `pause_stream` raises an exception. To ensure registration, before streaming, the receiver needs to check by retrieving at [https://helper.testnet.near.org/account/wabinab2.testnet/likelyTokens](https://helper.testnet.near.org/account/wabinab2.testnet/likelyTokens) whether there's the token contract exists or not. 
+If not, we redirect them to deposit a minute amount hence registering the token before owner can stream, before receiver can receive. Requires 2 way communication. 
 
 **If the stream was stopped by owner halfway**, then the `withdraw` doesn't work. 
