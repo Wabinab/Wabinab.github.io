@@ -1,6 +1,6 @@
 # Azure VM with VSCode Re-setup
 
-Sometimes, using React can destroy the connectivity to your Azure VM. Hence, we need to re-setup the VM if you can never SSH back in, plus you don't set up GUI/RDP connection to the VM. Here's how we quickly get it back up. 
+Sometimes, Azure VM can lost connectivity. **Most probably the reason is frequently changing the "size" of the VM; as other VM that infrequently or never changes size didn't have this problem.** Hence, we need to re-setup the VM if you can never SSH back in, plus you don't set up GUI/RDP connection to the VM. Here's how we quickly get it back up. 
 
 ## Setup `create` command
 We forever lost `create_rb.sh` file, which we'll have to figure out that. However, the other `create` command is still here. 
@@ -13,6 +13,25 @@ In `~/.my_custom_commands.sh` (which we have to make ourselves), put this functi
 # touch and open in VSCode
 function create() {
   touch $1 && code $1
+}
+
+
+# create ruby files
+function create_rb() {
+  git add .
+  git commit -m $1
+  git push
+  bundle gem $1
+  code $1/lib/$1.rb
+}
+
+
+# archive to online
+function archive() {
+  tar -czf $1.tar.gz $1
+  rm -rf $1/
+  sudo azcopy copy $1.tar.gz $2
+  rm $1.tar.gz 
 }
 ```
 
