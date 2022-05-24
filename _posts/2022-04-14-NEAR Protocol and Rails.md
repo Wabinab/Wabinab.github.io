@@ -75,3 +75,84 @@ Also for cards, make sure to `flex-wrap` so it can wrap around.
 
 ## Javascript Controller with Stimulus
 Finally, we found out that js.erb deprecated in Rails 7 (in fact, it's deactivated due to security issues) in favor of Hotwire Stimulus, with Javascript Controller, directly from `app/javascript/controllers`. For examples, check [this article out](https://dev.to/bhumi/stimulus-rails-7-tutorial-5a6a). Also, check [ones' updated article about this issue](https://read.cash/@wabinab/update-on-near-api-js-with-rails-9e0124c8). 
+
+
+---
+
+# Encryption and Decryption
+Without worrying about near-sdk-rs (which the library might be included but we can just make it explicit), here is how we encrypt and decrypt. 
+
+First, we generate the RSA public and private key, saving the private key and sending the public key (as string) to user, while saving the private key for use. **Note that you can only have one pair of private-public key at a time. If you have 
+multiple, it WILL FAIL** (and we're not planning to have multiple of them too). 
+
+```toml
+[dependencies]
+openssl = "0.10.40"  # Make sure change to newest version
+base64 = "0.13.0"
+```
+
+We just use a simple cipher system. We could always change it in the future if required. 
+
+```rust
+use openssl::rsa::{Rsa, Padding};
+use openssl::symm::Cipher;
+
+fn get_cipher() -> String {
+  let passphrase = "wabinab.near";  // could be an args in the fn. 
+  
+  let rsa = Rsa::generate(1024).unwrap();
+  let private_key: Vec<u8> = rsa.private_key_to_pem_passphrase(
+    Cipher::aes_128_cbc(),
+    passphrase.as_bytes()
+  ).unwrap();
+  let public_key: Vec<u8> = rsa.public_key_to_pem().unwrap();
+  
+  // Save private key into somewhere. 
+  
+  // return public key
+  String::from_utf8(public_key).unwrap()
+}
+```
+
+Then in Javascript, upon receiving the public key, we shall use it like this: 
+
+We first need the [JSEncrypt library](https://www.npmjs.com/package/jsencrypt) to be imported. Then, 
+
+```js
+var public_key = "-----BEGIN PUBLIC KEY-----" + ...;
+var encrypt = new JSEncrypt();
+encrypt.setPublicKey(public_key);
+var encrypted_data = encrypt.encrypt("what we want to encrypt goes here");
+
+// Send encrypted data to decrypt function in Rust
+```
+
+Then in Rust, we can decrypt: 
+
+```rust
+use openssl::rsa::{Rsa, Padding};
+use base64;
+
+fn decode_item(encrypted_data: String) {
+  let passphrase = "wabinab.near";
+  let private_key_pem: &[u8] = &private_key_in_vec_u8;
+  
+  let rsa = Rsa::private_key_from_pem_passphrse(
+    private_key_pem,
+    passphrase.as_bytes()
+  ).unwrap();
+  
+  let mut buf: Vec<u8> = vec![0; rsa.size() as usize];
+  let _ = rsa.private_decrypt(
+    &decode(encrypted_data).unwrap(),
+    &mut buf,
+    Padding::PKCS1
+  ).unwrap();
+  
+  let decrypted_data = String::from_utf8(buf).unwrap();
+  
+  // Then use decrypted data to do whatever you want to do. 
+}
+```
+
+That's it, the basic of encryption and decryption. 
