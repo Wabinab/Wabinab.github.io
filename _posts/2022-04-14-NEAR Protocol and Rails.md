@@ -144,7 +144,7 @@ fn decode_item(encrypted_data: String) {
   
   let mut buf: Vec<u8> = vec![0; rsa.size() as usize];
   let _ = rsa.private_decrypt(
-    &decode(encrypted_data).unwrap(),
+    &base64::decode(encrypted_data).unwrap(),
     &mut buf,
     Padding::PKCS1
   ).unwrap();
