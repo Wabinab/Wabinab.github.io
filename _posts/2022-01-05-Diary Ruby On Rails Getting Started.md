@@ -359,3 +359,23 @@ cd my_project
 (git init)
 heroku git:remote -a heroku-app-name
 ```
+
+## Pagination
+On the book, the old gem is no longer usable. Here, we shall use the new gem that supports Bootstrap v5. [This is the gem](https://github.com/delef/will_paginate-bootstrap-style)
+
+In your GemFile:
+```
+gem 'will_paginate-bootstrap-style'
+```
+
+Then, run: 
+```bash
+bundle install
+bash rebuild.sh
+```
+
+We need to rebuild to update the css file. Then, just follow the instruction in the page link: 
+
+```erb
+<%= will_paginate @users, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+```
