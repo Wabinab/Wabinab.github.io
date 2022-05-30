@@ -384,3 +384,5 @@ We need to rebuild to update the css file. Then, just follow the instruction in 
 When on try to use a different entry, it failed. Test that uses the first entry passes, but changed to another entry failed. 
 At first, one thought this might be problem of ERb, but it's not. It's something else. 
 One checked the database from Rails console and everything works fine! 
+
+Reason is, we forgot to insert the `username`. Let's test why it fails without username; 
