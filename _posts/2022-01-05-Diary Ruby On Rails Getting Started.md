@@ -379,3 +379,8 @@ We need to rebuild to update the css file. Then, just follow the instruction in 
 ```erb
 <%= will_paginate @users, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
 ```
+
+## Integration Test Fixtures
+When on try to use a different entry, it failed. Test that uses the first entry passes, but changed to another entry failed. 
+At first, one thought this might be problem of ERb, but it's not. It's something else. 
+One checked the database from Rails console and everything works fine! 
