@@ -386,3 +386,6 @@ At first, one thought this might be problem of ERb, but it's not. It's something
 One checked the database from Rails console and everything works fine! 
 
 Reason is, we forgot to insert the `username`. Let's test why it fails without username; 
+
+After test, although we enable log to console, it's still too difficult to find out why. In fact, we did not know why it fails without. 
+Therefore, a `username` **must** exist for the program to work. If it doesn't, it won't work. Therefore, `username` cannot be `nil`. 
