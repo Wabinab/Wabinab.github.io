@@ -52,6 +52,8 @@ After:
 </div>
 ```
 
+The confirmation, based on [this tweet](https://twitter.com/excid3/status/1471241559085617154), changes too! 
+
 And why it works when moving out of the list? One have no idea. It just works. You could also try to use `link_to` instead of `button_to` in the latter ones, it might work as well, one aren't sure about that. Basically it looks more like just how to display it. You can also use `button_to` in the non-working ones, and it also display a button, and it still doesn't work until you move it out. 
 
 ### Where do partials go
