@@ -156,3 +156,13 @@ fn decode_item(encrypted_data: String) {
 ```
 
 That's it, the basic of encryption and decryption. 
+
+---
+
+## 31 May 2022
+Today, one realizes, what's open is open. There's no such thing as "encrypted". Thought change method will return results that're closed? Nope. They're written on the blockchain. 
+As long as they have the transaction hash (which they can retrieve from the explorer) and your account id (which can be retrieved from the same transaction receipt), they can figure out the output. Even worse, they don't need to use near-api-js etc to figure it out: they can read it out from the blockchain. 
+So, encryption doesn't work on the blockchain, unless you pass a public key around. But that doesn't work either: because the library "openssl" is not supported on Rust for the blockchain. End of the world! 
+
+Anything that stays open stays open. Anything that requires to be behind closed doors stay in the database, or offline exchanges (like asking to email etc). 
+
