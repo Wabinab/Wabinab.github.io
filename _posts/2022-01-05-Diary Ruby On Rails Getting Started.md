@@ -45,11 +45,12 @@ After:
 <div>
 <%= button_to "Destroy", @article , 
                         method: :delete, 
-                        data: { confirm: 'Are you sure?' } %>
+                        form: {
+                           data: { turbo_confirm: 'Are you sure?' }
+                        }
+%>
 </div>
 ```
-
-Violà it works! **Though a caveat**, even the `scaffold` generated does not show the `confirm` part (no pop-up, no confirmation being displayed), so that part one doesn't know what happens with it. It might be due to OS, installation problem, or some other thing. 
 
 And why it works when moving out of the list? One have no idea. It just works. You could also try to use `link_to` instead of `button_to` in the latter ones, it might work as well, one aren't sure about that. Basically it looks more like just how to display it. You can also use `button_to` in the non-working ones, and it also display a button, and it still doesn't work until you move it out. 
 
