@@ -2,6 +2,11 @@
 
 Just a person whom look at oneself struggle in life and laugh at oneself. 
 
+## Books One Wrote
+Here we only include links to ".com" and ".co.uk" Amazon. Welcome to change the suffixes yourself if you have a different country's Amazon. 
+
+- Learn How To Learn. [US](https://www.amazon.com/dp/B0B1Z1JRZ6) and [UK](https://www.amazon.co.uk/dp/B0B1Z1JRZ6)
+
 ## Mirror.xyz Posts
 In chronological order, newest at the top. 
 
