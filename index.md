@@ -1,6 +1,6 @@
 # Welcome back, readers! 
 
-Low-key-ly blogging about anything. For best viewing experience, 125% zoom in is recommended. **Learn more in [About Page](https://wabinab.github.io/about)**
+Low-key-ly blogging about anything. For best viewing experience, 125% zoom in is recommended. **Learn more in [About Page](https://wabinab.github.io/about)**.
 
 One also blogs on:  
 **Mirror.xyz**: [https://mirror.xyz/0xa32e05D545FEc9cADb46BEB0839E3Ac0A9E39d9B](https://mirror.xyz/0xa32e05D545FEc9cADb46BEB0839E3Ac0A9E39d9B)  But **prefer to visit [about page](https://wabinab.github.io/about) for the list of posts one have as the main page aren't properly designed, causing browser to crash.**  
