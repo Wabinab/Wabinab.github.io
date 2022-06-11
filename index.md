@@ -3,7 +3,7 @@
 Low-key-ly blogging about anything. For best viewing experience, 125% zoom in is recommended. 
 
 One also blogs on:  
-Mirror: [https://mirror.xyz/0xa32e05D545FEc9cADb46BEB0839E3Ac0A9E39d9B](https://mirror.xyz/0xa32e05D545FEc9cADb46BEB0839E3Ac0A9E39d9B)  
+Mirror: [https://mirror.xyz/0xa32e05D545FEc9cADb46BEB0839E3Ac0A9E39d9B](https://mirror.xyz/0xa32e05D545FEc9cADb46BEB0839E3Ac0A9E39d9B)  But prefer to visit [about page](https://wabinab.github.io/about) for the list of posts one have as the main page aren't properly designed, causing browser to crash.  
 Read.cash: [https://read.cash/r/wabinab](https://read.cash/r/wabinab)  
 Medium: https://wabinab.medium.com/  
 Publish0x: [https://www.publish0x.com/@wabinab?a=3YaOgYzYax](https://www.publish0x.com/@wabinab?a=3YaOgYzYax)  
