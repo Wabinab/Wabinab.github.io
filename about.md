@@ -10,6 +10,7 @@ Here we only include links to ".com" and ".co.uk" Amazon. Welcome to change the 
 ## Mirror.xyz Posts
 In chronological order, newest at the top. 
 
+- [The Importance of Knowledge and How It Evolves](https://mirror.xyz/0xa32e05D545FEc9cADb46BEB0839E3Ac0A9E39d9B/YIB4whA1SANWAhBOcH53lPWg6Qo2VaAd44rNDQ01Vho)
 - [Blockchain Safety](https://mirror.xyz/0xa32e05D545FEc9cADb46BEB0839E3Ac0A9E39d9B/IpY43h3SlgdEO4r99SiJw4UgbhEesPhcoFyeYc7hgmM)
 - [How to Code An On-Chain Search Engine](https://mirror.xyz/0xa32e05D545FEc9cADb46BEB0839E3Ac0A9E39d9B/4N_KpWccWPNW7TNHqkmYSHIcvAO6svd9erpCEvLlAkI)
 - [If People Can Get It For Free, Why Would They Pay?](https://mirror.xyz/0xa32e05D545FEc9cADb46BEB0839E3Ac0A9E39d9B/DINkKzhEwZq7yaW8fhp7k5pUWxHs1w5VYES71EkEjRQ)
