@@ -392,3 +392,14 @@ Reason is, we forgot to insert the `username`. Let's test why it fails without u
 
 After test, although we enable log to console, it's still too difficult to find out why. In fact, we did not know why it fails without. 
 Therefore, a `username` **must** exist for the program to work. If it doesn't, it won't work. Therefore, `username` cannot be `nil`. 
+
+## createPopper.js `process` is not defined. 
+We know that Rails environment doesn't use "process.env", so it's annoying when you try to **make a dropdown outside of navbar** that it calls this. Hence, the quick fix is: In **application.html.erb** `<head>` part, add this: 
+
+```html
+<script>window.process = { env: {} }</script>
+```
+
+Reference: [https://github.com/rails/importmap-rails/issues/65](https://github.com/rails/importmap-rails/issues/65)
+
+
