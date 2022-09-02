@@ -402,4 +402,27 @@ We know that Rails environment doesn't use "process.env", so it's annoying when 
 
 Reference: [https://github.com/rails/importmap-rails/issues/65](https://github.com/rails/importmap-rails/issues/65)
 
+## Why Custom Class Function Not Running? 
+When one was programming, one changes the custom class function from this: 
+```rb
+class CustomClass
+  def self.custom_fn(input1)
+  end
+end
+```
+
+into this:
+```rb
+class CustomClass
+  def self.custom_fn(input1, input2)
+  end
+end
+```
+
+What it gives error is "wrong number of arguments, expected 1 but given 2". 
+
+That's because we **need to restart rails server, and/or rebuild** then only things will be updated. Thing is, it's imported at the beginning and **only at the beginning** using a `require`, hence to update it, it won't work with live updates, but you need to restart it. 
+It's just the same when you update CSS or JS functions. These are also precompiled, nothing adjoint to rails but imported, so you need to restart/rebuild upon changes. 
+
+Then things run as expected. 
 
