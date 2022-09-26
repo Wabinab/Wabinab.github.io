@@ -426,3 +426,10 @@ It's just the same when you update CSS or JS functions. These are also precompil
 
 Then things run as expected. 
 
+## Ruby not getting the correct version with RVM? 
+If you ever use rails without it as the home directory, you know that everytime you enter the folder, running `rails` command fails. Particularly, this is partially due to we need to first have them install and initiated the first time we `git clone` them. 
+Really, it's also caused by **the ruby version** that doesn't get compatible with your `Gemfile`. 
+
+To solve this, check for the file `.ruby-version` in your rails folder (top directory) and change from `system` to the specific version in your `Gemfile`, and everytime you enter the directory, it'll now be the correct ruby version. Voilà, solved! 
+
+
