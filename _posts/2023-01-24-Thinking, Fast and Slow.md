@@ -59,5 +59,7 @@ Though, in this situation, Anthony can choose between sure thing (utility **gain
 
 Perhaps this isn't explained in Bernoulli's paper? At least this is how one view his theory. If the insurance company includes time (shipping from Amsterdam to whatever the name called is requires some time, ship lost perhaps only known upon its arrival in the era without fast communication channels), then why we wouldn't do include time in Bernoulli's theorem to do calculations? 
 
+So even if Bernoulli's theorem is seriously wrong because he forgot to include time in his theory, we can modify his theory and include time when making final calculations. 
+
 ## Conclusion
 Generally, one agree with most of what the book content said, with some that may be matching for others but not what one react with. 
