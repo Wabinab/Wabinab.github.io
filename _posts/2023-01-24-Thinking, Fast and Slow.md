@@ -30,6 +30,9 @@ My first impressions are:
 - (I forgot my reaction, but remember I focus on the word "crime" and disregard "Julie", so probably thinking of none of her business again.)
 - (I don't follow Ivy League or know what a GPA is)
 
+## Edit during Chapter 20
+One now know that you can speak of your informed belief when it's a visual illusion; and one think that's true for oneself. One still see it as longer, but one know these kinds of trick questions comes up (in a kind environment) to trick you, so immediate disbelief arise to suppress System 1. 
+
 (Will be updated again if one found more as one haven't finish the book). 
 
 ## Conclusion
