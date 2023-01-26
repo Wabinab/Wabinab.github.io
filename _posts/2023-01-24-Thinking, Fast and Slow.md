@@ -54,5 +54,10 @@ How happy is Jill compared to how sad is Jack? (How much utility changes of Jack
 
 then we know that, Jack gain 60 utility points while Jill lose 26 utility points, so Jack = 60, Jill = -26. This explained the experience of Jack and Jill happiness (sadness). 
 
+Similarly for the next question on Anthony and Betty. Both choices are a gain of utility points for Anthony, while both choices are a lose of utility points for Betty. 
+Though, in this situation, Anthony can choose between sure thing (utility **gain** 20) or gamble (utility **gain** 25). For Betty, here choice of sure thing and gamble are both utility **loss**, points -30 and -25 respectively). It might or might not explain what choice Betty and Anthony choose here (with the small differences in utility point delta), but it surely explains for Anthony's happiness and Betty's sadness. 
+
+Perhaps this isn't explained in Bernoulli's paper? At least this is how one view his theory. If the insurance company includes time (shipping from Amsterdam to whatever the name called is requires some time, ship lost perhaps only known upon its arrival in the era without fast communication channels), then why we wouldn't do include time in Bernoulli's theorem to do calculations? 
+
 ## Conclusion
 Generally, one agree with most of what the book content said, with some that may be matching for others but not what one react with. 
