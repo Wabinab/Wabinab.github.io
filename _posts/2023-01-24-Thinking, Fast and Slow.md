@@ -33,8 +33,6 @@ My first impressions are:
 ## Edit during Chapter 20
 One now know that you can speak of your informed belief when it's a visual illusion; and one think that's true for oneself. One still see it as longer, but one know these kinds of trick questions comes up (in a kind environment) to trick you, so immediate disbelief arise to suppress System 1. 
 
-(Will be updated again if one found more as one haven't finish the book). 
-
 ## Edit during Chapter 25: Bernoulli's Errors
 One don't think this is considered an error. Thing is, perhaps one didn't read the actual research paper, so one might be confused. This is how one sees it: 
 
