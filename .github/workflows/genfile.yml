@@ -60,9 +60,8 @@ jobs:
             # Categories
             # Delete From cat-based index (based on saved-data from file-based index)
             c=$(jq --arg k $filename '.[$k]' categories_file.json)
-            if [ -z "$c" ]
-            then echo ""
-            else 
+            if [[ $c != null ]]
+            then
               # NOT NULL
               d=$(jq -r --arg k $filename '.[$k][]' categories_file.json)
               carr=($d)
