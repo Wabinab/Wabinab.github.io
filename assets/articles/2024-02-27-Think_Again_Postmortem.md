@@ -55,3 +55,4 @@ Of course, there is more in the book that you'd want to read yourself. We summar
 
 ### Notes: 
 1. HODL: Hold On for Dear Life. Used in Crypto. 
+2. Stereotypes only hold for quite a lot of people, and quite a lot may not even be "most", as it can be quite a lot and less than 50%. We can say there are a lot of people still being racist/whatever-ism, with many occurrences, but it doesn't incorporate most, and certainly not all. 
