@@ -1,5 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "com.wabinab.paynear",
-               "sha256_cert_fingerprints": ["BC:2E:2F:9C:03:2B:78:29:60:D5:94:76:96:01:6E:5C:AC:B8:1B:47:7E:30:9E:4B:A0:31:B5:6A:41:B2:9D:A6"] }
-}]

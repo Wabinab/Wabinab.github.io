@@ -1,45 +1,5 @@
 {
   "technology": [
-    "2021-06-30-Setting_up_Datacrunch.io_from_scratch.md",
-    "2021-07-02-Tips_and_Tricks_with_sending_jobs_to_Azure_ML_Compute_Clusters.md",
-    "2021-07-04-Sourcing_Images_Build_Model_and_Deployment.md",
-    "2021-07-26-eye-of-ml-the-object-detection-program.md",
-    "2021-08-02-Opinions_on_model_decision.md",
-    "2021-08-06-playing_with_cnn_quantization.md",
-    "2021-08-16-PyTorch_xla_tpu_utility.md",
-    "2021-12-01-Dealing_with_QGIS.md",
-    "2022-01-05-Diary_Ruby_On_Rails_Getting_Started.md",
-    "2022-03-03-Rust_testing_feature_learned.md",
-    "2022-04-14-NEAR_Protocol_and_Rails.md",
-    "2022-04-22-Azure_VM_with_VSCode_Resetup.md",
-    "2022-05-02-Optimizing_Contract.md",
-    "2022-05-03-Optimizing_Gas_NEAR_Protocol.md",
-    "2022-05-04-Roketo_v2_API_experimentation.md",
-    "2022-06-16-Minimal_Programming.md",
-    "2022-07-27-Rails_7_Asynchronous_GET.md",
-    "2022-08-09-Postgresql_With_Rails.md",
-    "2022-09-15-Rails_How_To_Create_Body_Without_JS.md",
-    "2023-01-30-Angular_Material_With_Ngx_Bootstrap.md",
-    "2023-10-13-a_crypto_bug.md",
-    "2024-02-12-A_Payment_System_On_Near_Protocol.md"
-  ],
-  "another": [
-    "2021-07-04-Sourcing_Images_Build_Model_and_Deployment.md"
-  ],
-  "thoughts-and-opinions": [
-    "2021-08-02-Opinions_on_model_decision.md",
-    "2021-12-26-Why_some_people_cant_program_and_how_to_teach_them.md",
-    "2022-01-12-Opinion_on_what_easy_means_for_programming.md",
-    "2022-05-30-Our_Doctrine.md",
-    "2022-06-16-Minimal_Programming.md",
-    "2022-12-28-Material_Lies_The_Base_of_Invention.md",
-    "2023-01-24-Thinking_Fast_and_Slow.md"
-  ],
-  "optimization": [
-    "2022-05-02-Optimizing_Contract.md",
-    "2022-05-03-Optimizing_Gas_NEAR_Protocol.md"
-  ],
-  "use_this_app": [
-    "2024-02-12-A_Payment_System_On_Near_Protocol.md"
+    "2021-06-30-Setting_up_Datacrunch.io_from_scratch.md"
   ]
 }
