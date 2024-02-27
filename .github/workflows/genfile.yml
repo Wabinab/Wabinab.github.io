@@ -50,7 +50,7 @@ jobs:
             title=$(head -n1 ${changed_file})
             title=$(echo "${title//#}" | awk '{$1=$1};1' | sed 's/\r$//')
 
-            value=$(pandoc -f markdown -t plain <(sed -n -e '2,7p' ${changed_file}))
+            value=$(pandoc -f markdown -t plain <(sed -n -e '4,10p' ${changed_file}))
             value="${value//$'\n'/ }"
             arr=($value)
             value="${arr[@]:0:32}"
