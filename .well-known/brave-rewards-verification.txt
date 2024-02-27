@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: wabinab.github.io
+Token: e7ee7062461fea6410a75c94e784f59115d5c73957b28f27dec871274a856ea1
