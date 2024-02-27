@@ -48,7 +48,7 @@ jobs:
             echo "Changed file: ${changed_file}"
             filename=$(basename -- ${changed_file})
             title=$(head -n1 ${changed_file})
-            title=$(echo "${title//#}" | awk '{$1=$1};1')
+            title=$(echo "${title//#}" | awk '{$1=$1};1' | sed 's/\r$//')
 
             value=$(pandoc -f markdown -t plain <(sed -n -e '2,7p' ${changed_file}))
             value="${value//$'\n'/ }"
@@ -75,7 +75,7 @@ jobs:
 
             # Then Add to cat-based index
             # Together, update file based index in one go. 
-            c=$(sed -n -e '2p' ${changed_file})
+            c=$(sed -n -e '2p' ${changed_file} | sed 's/\r$//')
             categories=($c)
             jq --arg k $filename '.[$k] = []' categories_file.json > "$tmp" && mv "$tmp" categories_file.json
             for item in "${categories[@]}" 
