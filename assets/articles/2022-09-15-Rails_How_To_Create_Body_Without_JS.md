@@ -1,4 +1,5 @@
 # Rails How to Create body without JS. 
+technology
 
 Rails use ERb, so if we change something that needs to change the basic structure, it needs **to reload**. So far, one haven't found anyway to not reload if one are to perform a GET request **inline**. If you know how, please, leave me [a message in the discussion with a link/details](https://github.com/Wabinab/Wabinab.github.io/discussions). 
 

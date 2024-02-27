@@ -1,3 +1,6 @@
+# Dealing with QGIS
+technology
+
 This is not a actual blog post discussing on anything in particular. Rather, it's more like a diary of what is encountered, what is solved, as time passes. And it's more like a diary written to myself as well. 
 
 After you download the QGIS software and installed it, then you have the basic things ready. The first error is accidentally closing the Layers and Explorer panels. This can be opened back with View --> Panel --> (whatever panel you want to open). 

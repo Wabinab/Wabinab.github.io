@@ -1,4 +1,5 @@
 # Opinions: Machine Learning, their outcomes, and decision making
+technology thoughts-and-opinions
 
 Machine Learning (ML) lacks decision making in the loop. We have computer vision programs, and their output are useful. But outputs are just outputs, they aren't making any decisions. Example of decision making: autonomous vehicle. Inputs from sensors, visions, etc passed through ML models gives output, and depending on their output, the model will make different decisions. 
 

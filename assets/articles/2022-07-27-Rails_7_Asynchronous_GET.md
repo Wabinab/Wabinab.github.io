@@ -1,4 +1,5 @@
 # How to "GET" (request) from database without reloading page in Rails 7
+technology
 
 While [this page](https://medium.com/swlh/build-a-dynamic-search-with-stimulus-js-and-rails-6-56b537a44579) explains with stimulus and Rails in Rails 6, it only "almost" explain how to do it in Rails 7. Particularly, because `respond_to` got deprecated for some security reasons, what's used to work in Rails 6 now doesn't work in Rails 7. Hence, we need some other way to do it. 
 

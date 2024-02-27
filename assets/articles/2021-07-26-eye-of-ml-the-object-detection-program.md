@@ -1,4 +1,5 @@
 # Eye of ML Summary
+technology
 
 [Eye of ML](https://github.com/Wabinab/eye_of_ml) is a simple object detection program. It connects to your main webcam for input, and output the image in real time. 
 

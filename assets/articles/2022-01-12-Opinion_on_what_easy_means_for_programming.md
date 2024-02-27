@@ -1,4 +1,5 @@
 # Opinion on what "easy" means for programming
+thoughts-and-opinions
 
 When one learns about Ruby on Rails, one found the idea "convention over configuration" great. Whether or not one understood (or misunderstood) that idea, it lays down a foundation over what we can do too in programming and Machine Learning. 
 

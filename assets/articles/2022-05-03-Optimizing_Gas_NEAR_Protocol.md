@@ -1,4 +1,5 @@
 # Near Protocol Contract: Optimizing Gas and Debunk Mysteries
+technology optimization
 
 Recently, there's a function that uses too much gas, from one's perspective; and we have Spring is NEAR Challenge 7 going on, so one decide to speak about gas. Let's see some methods to reduce gas cost. Note that this is not intensive, and we just discussed some experiments one tried with. 
 

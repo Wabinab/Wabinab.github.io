@@ -1,4 +1,5 @@
-# Material Lies the Base of Invention
+# Material Lies at the Base of Invention
+thoughts-and-opinions
 
 One used to tell stories about using what we have (limitations) to build amazing stuffs. That is, if you are only given these specific resources, what can you do with it, combining them into something that does something you want? 
 That isn't something bad, but one would like to look more into the "limitations" part, especially for those that could use materials and hardwares on the bleeding edge: **what kinds of limitations pull us back?**
@@ -27,6 +28,7 @@ Material lies the base of invention. When a new material is developed, it's like
 Similarly, as a base limitation, the lacking of material with a specific state means slow progress in scientific discoveries. 
 
 
-References: 
+## References: 
 [1] https://www.onlinemetals.com/en/melting-points
+
 [2] https://engineering.virginia.edu/news/2018/11/generating-current-well-thrust-jet-engines-0

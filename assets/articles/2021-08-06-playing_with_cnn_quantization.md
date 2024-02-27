@@ -1,4 +1,5 @@
 # Playing with CNN Quantization
+technology
 
 Quantization of models have been a fad and research focused topic nowadays, particularly with INT8 as weights, it could speed up model inference and also create more lightweight models. Some APIs provide introduction to quantization such as [PyTorch](https://pytorch.org/blog/introduction-to-quantization-on-pytorch/) and [TensorFlow](https://www.tensorflow.org/lite/performance/post_training_quantization) and maybe others. And irregardless whether there are proper implementations of quantization for CNN (As far as one is aware of, CNN may have static quantization for PyTorch but certainly not yet for dynamic quantization, which PyTorch only supports LSTM and Linear layers nowadays. For TensorFlow, one have no idea as one haven't look at it yet). 
 
@@ -82,18 +83,19 @@ We take in an image of size 640x480x3 and then try to find the maximum and minim
 
 **Norm Frame Min:**
 
-![](/images/norm_frame_min.png "Norm Frame Min")
+![](assets/images/norm_frame_min.png "Norm Frame Min")
 
 **Norm Frame Max:** 
 
-![](/images/norm_frame_max.png "Norm Frame Max")
+![](assets/images/norm_frame_max.png "Norm Frame Max")
 
 Perhaps the more important of the two are the Max as after ReLU we might expect the min to disappear (since it's negative anyways). What's surprising is that the max difference between the original and the quantized difference is 0.04. On one hand, it's quite small, one the other hand, it's quite big (as it depends on our outputs, which might be smaller than 0.04). 
 
 ### One Channel
-(to be written)
+(not documented)
+<!-- (to be written)
 
-own_notes: g = (1, 1, 2, 2), m and n = (1, 1, 5, 5), h = (1, 1, 640, 480)? 
+own_notes: g = (1, 1, 2, 2), m and n = (1, 1, 5, 5), h = (1, 1, 640, 480)?  -->
 
 ### Caveats
 Note that we are only doing this for one layer of CNN and not even including ReLU in the filter. Hence, this might not work so well (a.k.a. much larger min max differences) if you try adding ReLU or Linear layers. This is because the quantized outputs not normalized by the `norm_factor` are passed on to the next layer, and we cannot be sure that the quantized output will continue to work as expected downstream compared to non-quantized output. 

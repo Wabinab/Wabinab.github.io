@@ -1,4 +1,5 @@
 # Our Doctrine
+thoughts-and-opinions 
 
 Have you heard of the [Rails Doctrine](https://rubyonrails.org/doctrine)? We have our own doctrine: things that we follow and perhaps "wish" to change the world of. This doctrine will update as we change; 
 and hopefully we find our pillars as we go. 

@@ -1,4 +1,5 @@
 # Optimizing Smart Contract Gas and Storage Consumption
+technology optimization
 
 Recently we did a competition on SiNEAR_EA_* repo, and there are some idea on optimization. 
 

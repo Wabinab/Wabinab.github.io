@@ -1,6 +1,9 @@
-One am working on learning Ruby on Rails currently, and there are some problems that are met. This post serves as a diary to conclude what errors are being made, and how they are solved. We might or might not include the thought process of solving them, and they might or might not include the only method to solve, and some might or might not be necessary to solve the problem. 
+# Diary: Ruby On Rails Getting Started
+technology 
 
-### Syntax error: expecting do or '{' or '('
+One is working on learning Ruby on Rails currently, and there are some problems that are met. This post serves as a diary to conclude what errors are being made, and how they are solved. We might or might not include the thought process of solving them, and they might or might not include the only method to solve, and some might or might not be necessary to solve the problem. 
+
+### `Syntax error: expecting do or '{' or '('`
 This happens in the `article.rb`. Originally we have the code: 
 
 ```ruby

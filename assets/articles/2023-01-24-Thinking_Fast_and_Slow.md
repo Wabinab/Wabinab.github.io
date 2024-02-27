@@ -1,4 +1,5 @@
 # Thinking, Fast and Slow: Some Conflicts?
+thoughts-and-opinions
 
 The title was the book by Daniel Kahneman. One just wants to talk a bit about oneself, probably something that goes unnoticed. Say, one agrees that most of the things are true, even if one didn't put a camera and check out one's facial emotions. Yet, there are something that seems unnatural to oneself, particularly, some fast reactions. 
 
@@ -38,17 +39,16 @@ One don't think this is considered an error. Thing is, perhaps one didn't read t
 
 Consider a previous question on insurance, where 10M people lost 1M means losing of 4 utility points, and 3M people lost 1M means losing of 18 utility points. If we consider Bernoulli's moral expectation **over time**, we can answer the happiness question: 
 
-```
-Today Jack and Jill each have a wealth of 5M. 
-Yesterday, Jack had 1M and Jill had 9M. 
-Are they equally happy? (Do they have the same utility?)
-```
+
+> Today Jack and Jill each have a wealth of 5M.
+Yesterday, Jack had 1M and Jill had 9M.
+>> Are they equally happy? (Do they have the same utility?)
+
 
 In fact, it's because we ask "are they equally happy" that asks us to compare their utility today; but we're mentioning here their gain/lose in utility, so the question that's being asked doesn't take into account of time. If we instead ask this question: 
 
-```
-How happy is Jill compared to how sad is Jack? (How much utility changes of Jack and Jill)? 
-```
+> How happy is Jill compared to how sad is Jack? (How much utility changes of Jack and Jill)? 
+
 
 then we know that, Jack gain 60 utility points while Jill lose 26 utility points, so Jack = 60, Jill = -26. This explained the experience of Jack and Jill happiness (sadness). 
 

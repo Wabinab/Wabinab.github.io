@@ -1,4 +1,5 @@
 # Idea: Minimal Programming
+technology thoughts-and-opinions
 
 We know that software requires security update, because we never know how it'll be hacked. There are thoughts on, however, minimal programming, where it doesn't require security update to continue its usage. 
 

@@ -1,3 +1,6 @@
+# Why Some People Can't Program, and How to Teach Them?
+thoughts-and-opinions
+
 There is a draft research paper (well, read more like a blog post) that mentioned on the two extremes of people who can't program and who can program. Today, one would like to take a look at the paper, give some of one's opinion, and give some opinion of how to let people be aware of what they're thinking, and hopefully they might be able to start programming. 
 
 Here are the links to that [particular paper](https://web.archive.org/web/20070318023700/http://www.cs.mdx.ac.uk/research/PhDArea/saeed/paper1.pdf), and here is the link to the [blog post](https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/) where one first read about it. 

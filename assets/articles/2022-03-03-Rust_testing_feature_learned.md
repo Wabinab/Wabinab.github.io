@@ -1,4 +1,5 @@
 # Rust testing features learned
+technology
 
 This article hopes to speak about one's learning today about Rust testing feature and smart contract, including the pain of using pre-release rather than stable version. 
 

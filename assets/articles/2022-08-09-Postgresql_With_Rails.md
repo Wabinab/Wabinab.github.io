@@ -1,4 +1,6 @@
 # Postgresql With Rails
+technology
+
 As usual, this is just a diary of what problems being encountered during the process. 
 
 ## Using Trigram in `pg_search` gem. 

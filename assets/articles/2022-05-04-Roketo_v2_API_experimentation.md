@@ -1,4 +1,5 @@
 # Experimenting with Roketo v2 API: A Diary
+technology
 
 Referencing: [Roketo v2 API](https://kikimora-labs.notion.site/Roketo-v2-api-a6b1cff8b9f74014a42b86b084cbbbd0)
 

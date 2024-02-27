@@ -1,4 +1,5 @@
 # Azure VM with VSCode Re-setup
+technology
 
 Sometimes, Azure VM can lost connectivity. **Most probably the reason is frequently changing the "size" of the VM; as other VM that infrequently or never changes size didn't have this problem.** Hence, we need to re-setup the VM if you can never SSH back in, plus you don't set up GUI/RDP connection to the VM. Here's how we quickly get it back up. 
 
