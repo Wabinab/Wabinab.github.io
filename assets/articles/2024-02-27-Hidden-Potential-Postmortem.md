@@ -18,3 +18,5 @@ The misty future is what holds one's back. The emotional burden to unlearn what'
 As the fire rages, clearing the mists around, (s)he could see the distant cities, and faces looking toward his/her direction, still wishing for his/her return. (S)He turned back, smiled, and continue on his/her journey, leaving the bonfire behind. It's the first bonfire, but will never be the last. Gradually, children, adults came, gathering around that bonfire, eyes sparkling at the new scene never seen, before acceptance settle. 
 
 Do they still remember (s)he who laid the bonfire? 
+
+(ignore this line)
