@@ -19,6 +19,5 @@ As the fire rages, clearing the mists around, (s)he could see the distant cities
 
 Do they still remember (s)he who laid the bonfire? 
 
-
-### P.S.:
+### P.S:
 [Post any suggestions here](https://github.com/Wabinab/Wabinab.github.io/discussions/2), one'll read it and consider the changes. 
