@@ -34,7 +34,8 @@
     "2022-06-16-Minimal_Programming.md",
     "2022-12-28-Material_Lies_The_Base_of_Invention.md",
     "2023-01-24-Thinking_Fast_and_Slow.md",
-    "2024-03-01-Grit.md"
+    "2024-03-01-Grit.md",
+    "2024-03-03-Exploratory.md"
   ],
   "optimization": [
     "2022-05-02-Optimizing_Contract.md",
@@ -51,5 +52,8 @@
   ],
   "principles": [
     "2999-12-31-my-principles.md"
+  ],
+  "exploratory": [
+    "2024-03-03-Exploratory.md"
   ]
 }
