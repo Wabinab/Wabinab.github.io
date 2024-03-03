@@ -1,5 +1,5 @@
-# Postmortem: Overcomplicated by Samuel Arbesman
-postmortem
+# Afterthought: Overcomplicated by Samuel Arbesman
+afterthought
 
 Imagine yourself building something. Then, imagine a hundred years later, they're still in use. How can they provide maintenance? You're long gone! When Voyager I, the only spacecraft (as of writing) that escape the solar system, had bugs, and all their original builders are either long gone, or long retired. Luckily, they have documentations. Imagine again, that what you write, only you can understand, either because of illegible handwriting (urg... one was guilty years ago), or worse, because one had difficulty putting ideas, thinkings, into words. How can they understand what you write, if what you write has ambiguities, dependencies upon assumptions that only you know what it is, but they don't. 
 

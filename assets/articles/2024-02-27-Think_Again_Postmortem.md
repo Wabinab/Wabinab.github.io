@@ -1,13 +1,13 @@
-# Postmortem: Think Again By Adam Grant
-postmortem
+# Afterthought: Think Again By Adam Grant
+afterthought
 
 Ok, we updated to a new website today, so let's write something. 
 
 Previously, one had read a lot of books, but have never thought of making summarization until a few months back. After clearing some work, one finally had the time to work on a project called `Triangulation` (still private as of writing, you'd see it in the future), which attempts as a tool to put whatever being learnt into use. There are lots of learnings from various books, some support one another, others discriminate one another, and with that tool, one could put stuffs into actions. 
 
-While that tool is under development, we would write postmortems. Originally, postmortems are intended when an incident happens, a detailed report of what causes it, etc. To prevent pointing fingers, for example. 
+While that tool is under development, we would write afterthoughts. 
 
-> In our case, postmortems are more like summary, included some personal thoughts, or thoughts taken from other writers, mesh together. **It's goals is to activate thinking.** 
+> Afterthoughts are summaries, personal thoughts, and/or thoughts taken from other writers, meshed together. **Its goals is to activate thinking.** 
 
 Let's start. 
 
@@ -49,7 +49,7 @@ Since others aren't our puppet, we can't control them; and we mentioned we can o
 Humans default to confirmation. "I must know whether this is true, or false." It requires constant attention to stay alert, i.e. to live with "maybe"; and humans can't exert attention for very long. If a 50%-maybe is so hard, what says the different shades of maybe (10% maybe, 72%-maybe). Yet, the world is complicated, complex; we can't deny that. In fact, what we believe as 0% or 100% may be 3% and 95%, or whatever number that's near 0 and 100, but never equals to. If we resort to "yes" or "no", we'd treat it as conclusion, and close off the topic, tick off the checkbox on to-think list, and clear it from our memory. Keeping things complicated with maybe requires attention at the back of our head, to consider it at intervals whether it's time to change our mind to either poles. 
 
 ### Conclusion
-Of course, there is more in the book that you'd want to read yourself. We summarized some of the points above, and take some ideas from other books, like _Superforecasting_ by Philip Tetlock. Overall, one don't think this postmortem reaches what one wants, but since this is the first time one did it, one'll leave this "first draft" up. We'd improve in the future. 
+Of course, there is more in the book that you'd want to read yourself. We summarized some of the points above, and take some ideas from other books, like _Superforecasting_ by Philip Tetlock. Overall, one don't think this afterthought hit its goal, but since this is the first time one did it, one'll leave this "first draft" up. We'd improve in the future. 
 [Post any suggestions here](https://github.com/Wabinab/Wabinab.github.io/discussions/2), one'll read it and consider the changes. 
 
 

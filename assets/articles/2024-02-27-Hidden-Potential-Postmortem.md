@@ -1,5 +1,5 @@
-# Postmortem: Hidden Potential by Adam Grant
-postmortem
+# Afterthought: Hidden Potential by Adam Grant
+afterthought
 
 <p class="text-center"><em>Potential isn't the matter of where you start, but of how far you travel.</em></p>
 
