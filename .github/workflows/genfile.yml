@@ -89,6 +89,7 @@ jobs:
           mv ./articles.json ./assets
           mv ./categories.json ./assets
           mv ./categories_file.json ./assets
+          rm pandoc.deb
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
