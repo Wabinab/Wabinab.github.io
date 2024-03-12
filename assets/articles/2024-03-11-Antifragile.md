@@ -19,7 +19,13 @@ Of course, one don't totally agree with the jumps. In fact, some stuffs like his
 
 Author introduced something called _stochastic resonance_, where injecting random noise into a system improve its signal. Mathematics is called _simulated annealing_, and we see quite a lot of applications in it. E.g. one used to see this annealing in quantum computing, where without a real quantum computer, you could use annealing to search for the shortest path travel (like GPS) between two points joined by routes. Then, if you're a fad of machine learning, lots of ML models used injection of noise to train better algorithms. One of them quite popular recently is called Stable Diffusion, which replaces the Generative Adversarial Network (GAN) for generating images, and you can use Diffusion model to convert text to image, like that used in OpenAI's DALL-E model. Basically, it trains by converting an image, subsequently adding noise into the image with every cycle, until it's completely random. Then, it tries to reconstruct from that noisy image, back to the picture. Try DALL-E and you'll know how good it is. 
 
-(Chapter 7 onwards not yet read)
+We always want to change stuffs, to fix things, regardless of whether the thing needs fixing or not. Author argues that such fixing could cause catastrophe, as something that might recover itself, after you fix, become irrecoverable in a worse-than-before-the-fix state. Therefore, one should first determine whether the thing needs fixing before coming up with a solution to fix it. 
+
+In _Superforecasting_, we deal with probabilities which is what this book is against. In one's opinion, there aren't anything clash between this book and that. Reason: Superforecasting tries to get an accurate forecast of certain forecast-able events (non-Black-Swan) to a high accuracy. This book argues that, instead of trying to forecast, which is difficult, we should try to build something that's highly probable (what Superforecasting called "too easy to be forecast that they don't need to be forecast"), or highly improbable, so we don't need superforecasters to forecast events, but could be highly sure/unsure of its happening. One doesn't change the existing system, this book encourages you to change the system. 
+
+---
+(Chapter 10 onwards not yet read)
+
 
 ### Notes: 
 1. That is not to say that WW III will certainly happen. There is a chance, but unfortunately, it's a Black Swan, not forecast-able. What's forecast-able is whether state A and state B (like US and China) would go to war or not (but alas, one isn't a superforecaster yet, so that one can't forecast), or whether two stages (Israel and Hamas) would stop war or not. 

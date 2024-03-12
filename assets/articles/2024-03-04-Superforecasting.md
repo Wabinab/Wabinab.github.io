@@ -1,4 +1,4 @@
-# Afterthoughts: Superforecasting by Philip Tetlock
+# Afterthought: Superforecasting by Philip Tetlock
 afterthought
 
 One actually started this book out of curiosity. Since the last Bitcoin crash in 2021, Bitcoin had been rising for the past year, albeit slowly. One uses gut feeling plus fear and greed index to make decisions, and that misses much opportunity. Seeing Bitcoin rise, one wanted to predict, when will the next crash be, so one could sold off one's assets before the crash? Let's rephrase: will Bitcoin lose more than a-third of its value in the next 3 months, starting now? 

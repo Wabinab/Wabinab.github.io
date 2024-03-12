@@ -14,7 +14,7 @@ for changed_file in assets/articles/*; do
   value="${arr[@]:0:32}"
 
   tmp=$(mktemp)
-  jq -r --arg j "$filename" --arg k "$title" --arg v "$value" '.[$j] += {($k):$v}' articles.json > "$tmp" && mv "$tmp" articles.json
+  jq -r --arg j "$filename" --arg k "$title" --arg v "$value" '.[$j] = {($k):$v}' articles.json > "$tmp" && mv "$tmp" articles.json
 
   # Categories
   # Delete From cat-based index (based on saved-data from file-based index)
