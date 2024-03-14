@@ -23,8 +23,12 @@ We always want to change stuffs, to fix things, regardless of whether the thing 
 
 In _Superforecasting_, we deal with probabilities which is what this book is against. In one's opinion, there aren't anything clash between this book and that. Reason: Superforecasting tries to get an accurate forecast of certain forecast-able events (non-Black-Swan) to a high accuracy. This book argues that, instead of trying to forecast, which is difficult, we should try to build something that's highly probable (what Superforecasting called "too easy to be forecast that they don't need to be forecast"), or highly improbable, so we don't need superforecasters to forecast events, but could be highly sure/unsure of its happening. One doesn't change the existing system, this book encourages you to change the system. 
 
+Seriously speaking, one haven't read that much of Seneca; for most translations are using twisted English that's quite difficult to understand without extreme concentration. Nor do one know Greek nor Latin, so the original text requires some while-learning-while-reading tremendous effort (though doable). 
+
+Anyways, author demonstrated the Seneca's barbell, which is an extremization between both ends. Example, having a stable job while gambling in extremely risky but high return areas, in 90/10 (or at most 80/20, if you're prepared to lose 20%). This isn't the first time the technique reached one's ear. In _Originals_ by Adam Grant, his students continued study (stability) (#no-college-dropout) while preparing to sell glasses via online platform (it's very possible no one wants to buy short-sighted glasses via online platform, no one knows or tried at that time, so the risk is high). And one agree, it's something to use even without superforecasting. 
+
 ---
-(Chapter 10 onwards not yet read)
+(Chapter 12 onwards not yet read)
 
 
 ### Notes: 
