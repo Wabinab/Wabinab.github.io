@@ -27,8 +27,18 @@ Seriously speaking, one haven't read that much of Seneca; for most translations 
 
 Anyways, author demonstrated the Seneca's barbell, which is an extremization between both ends. Example, having a stable job while gambling in extremely risky but high return areas, in 90/10 (or at most 80/20, if you're prepared to lose 20%). This isn't the first time the technique reached one's ear. In _Originals_ by Adam Grant, his students continued study (stability) (#no-college-dropout) while preparing to sell glasses via online platform (it's very possible no one wants to buy short-sighted glasses via online platform, no one knows or tried at that time, so the risk is high). And one agree, it's something to use even without superforecasting. 
 
+When we can **_choose_** to do or not do something, our minds are free. When you're forced to do something, and you have no choice but to do that thing, it's fragile. With a choice, you can always choose the alternative if you don't like it, or for whatever reasons, hence antifragile. Choice allows one to fall back on something, when things did not work out as we expect it to. Just imagine, if you only have one path to the destination, and that path is block, there are no other ways to take around, hence you can never reach your destination unless the obstacle is removed. That's why it's fragile. On the other hand, with many pathways toward the destination, you can always get to it, even if multiple pathways are blocked; therefore, antifragile. 
+
+Especially when your outcome has very little loss, and a lot of gain. The loss is so little it's bearable, even after multiple trials; while the gain is so large that it's worth to bear the loss, even if at the end of the day, you didn't hit it. If you're rational enough, on top of such asymmetry, you'd choose something that has a higher probability of getting the hit, and that's what makes guarantees. 
+
+Then, we think that study comes before doing. Wrong! Just think, how do the people write the textbook you're studying without people first doing, then compile them into a textbook? To get things work, people do trial and error; then only later looked back to figure out how the heck does it work. Those who got it working will tell you they don't need to understand the why, they just need the thing working. 
+
+Then, two things aren't necessarily the same thing. For example, we may think that war causes oil prices to rise; but oil prices would alter itself according to our prediction; so we predict it to rise, everyone would be selling, then it'll drop, contrary to what we predict. So, oil prices depends on our prediction and trader's actions, rather than the war. 
+
+NASA used to have the O-rings problem. After that, mentioned in Adam Grant's _Think Again_, they need to prove themselves to proceed with the launch, instead of those opposing the launch proving themselves to not launch; for launch is more catastrophic if there's a problem compared with a launch delayed. This idea linked to the _via negativa_ effect that author mentioned. Doctors should prove their intervention valid, with sufficient benefits to overcome hidden/unseen detriments, rather than patients proving themselves they're better without taking intervention. 
+
 ---
-(Chapter 12 onwards not yet read)
+(Chapter 22 onwards not yet read)
 
 
 ### Notes: 
