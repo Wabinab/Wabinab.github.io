@@ -37,8 +37,9 @@ Then, two things aren't necessarily the same thing. For example, we may think th
 
 NASA used to have the O-rings problem. After that, mentioned in Adam Grant's _Think Again_, they need to prove themselves to proceed with the launch, instead of those opposing the launch proving themselves to not launch; for launch is more catastrophic if there's a problem compared with a launch delayed. This idea linked to the _via negativa_ effect that author mentioned. Doctors should prove their intervention valid, with sufficient benefits to overcome hidden/unseen detriments, rather than patients proving themselves they're better without taking intervention. 
 
----
-(Chapter 22 onwards not yet read)
+One really like the part of _via negativa_. It sounds good: by removing instead of adding, you get better effect for free (except probably your time, if you're involved in some placebo rituals to ease _via negativa_ effects, something to help you persist and/or resist). The author also use it to predict the future: like chairs should be around for another few thousand years; remove fragile stuffs that's now available, like large conglomerate probably replaced by other similarly fragile large conglomerate; rather than adding stuffs to it like flying cars, anti-gravity weapons, etc. 
+
+The final part talks about ethics, which one won't be simplifying here. Read it yourself! [Here's a copy of the book on Archive](https://archive.org/details/Antifragile)
 
 
 ### Notes: 
