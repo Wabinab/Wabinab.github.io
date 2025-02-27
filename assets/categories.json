@@ -86,7 +86,8 @@
     "2024-12-30-Snowball.md",
     "2025-01-21-Power_of_Strangers.md",
     "2025-02-04-Successful_Aging.md",
-    "2025-02-12-Lessons_of_History.md"
+    "2025-02-12-Lessons_of_History.md",
+    "2025-02-23-metamorphosis.md"
   ],
   "history": [
     "2024-03-11-Sapiens.md",
@@ -134,5 +135,8 @@
   ],
   "longevity": [
     "2025-02-04-Successful_Aging.md"
+  ],
+  "great_books": [
+    "2025-02-23-metamorphosis.md"
   ]
 }
