@@ -1,6 +1,8 @@
 # An Intimate History of Humanity by Theodore Zeldin
 afterthought history
 
+(NOT YET FINISHED!!!)
+
 Children, free from responsibilities, protected by parents, grew up to become slaves. To step out into the unknown territory, without someone hand in hand, a scary thought. Therefore, we make ourselves slaves, sacrificing our freedom, to live under the umbrella of comfort. Under the new name 'employee', modern slaves work for their 'employers', freed from the 'burdens' to think for oneself, from the heavyweight of bearing one's responsibilities. Their sense of direction, given to them by their employers. But hey, despite many whom enslaves oneself, someone viewed their life a different way! Perhaps the slave master, depending on the slaves, are themselves a slave, a parasite. Or perhaps, our life is not that choiceless, and all that required is a change of perspective! 
 
 Where there are people, there are societies. Where there are societies, there are inequalities. Where there are inequalities, there are barriers. Slangs, ideas, culture, style, sex/gender, fueled by withholding respect, acknowledges superiority, not understanding. What use is the freedom of speech, if what withheld us is not a dictator, but ourselves? Conversations, not lectures, had prerequisite: other people, curiosity in them, equality for all, and education. Equality means respect, and equality means about the same level of education; for those lacking in, enlightenment is few. Learning how to ramble about everything, including on knowledge which you don't possess, is indulging in the self, saving face, protecting pride, not conversing. 
