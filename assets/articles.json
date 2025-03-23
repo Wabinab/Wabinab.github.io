@@ -18,7 +18,7 @@
     "Playing with CNN Quantization": "Quantization of models have been a fad and research focused topic nowadays, particularly with INT8 as weights, it could speed up model inference and also create more lightweight models. Some APIs provide"
   },
   "2021-08-16-PyTorch_xla_tpu_utility.md": {
-    "[PyTorch XLA TPU Utility](https://github.com/Wabinab/TPU_utility)": "Goal: To ease the usage of TPU without much changes in your original code, provided the original code is more functionally written. Tensor Processing Unit (TPU) is a very fast hardware in"
+    "PyTorch XLA TPU Utility": "Goal: To ease the usage of TPU without much changes in your original code, provided the original code is more functionally written. Tensor Processing Unit (TPU) is a very fast hardware in"
   },
   "2021-12-01-Dealing_with_QGIS.md": {
     "Dealing with QGIS": "This is not a actual blog post discussing on anything in particular. Rather, it’s more like a diary of what is encountered, what is solved, as time passes. And it’s more like"
@@ -206,9 +206,6 @@
   "2025-03-05-About_Her.md": {
     "'I' want to write about Her": "There’s this, girl, whom one’ll call Mademoiselle, one really don’t know about her; at least not that much. She had her own inner circles, and one isn’t one of them. She had"
   },
-  "2025-02-13-Intimate_history_of_humanity.md": {
-    "An Intimate History of Humanity by Theodore Zeldin": "(NOT YET FINISHED!!!) Children, free from responsibilities, protected by parents, grew up to become slaves. To step out into the unknown territory, without someone hand in hand, a scary thought. Therefore, we"
-  },
   "2025-03-08-time.md": {
     "Wrestling Against Time": "The Internet imprisons time. All the beautiful lights and the addictive Chinese novels, they captured one’s attention from leaving it. When noon time arrives, one’d say, “Just one more chapter, please,” and"
   },
@@ -223,5 +220,8 @@
   },
   "2025-03-18-Why_we_save_energy.md": {
     "Why we choose to blindly trust until something alert us, then we swing full way from trust to distrust": "Finding jobs these days aren’t easy, and it’s an excitement when people even invite you to the first part of the interview process. Whether or not you pass, at least that’s an"
+  },  
+  "2025-02-13-Intimate_history_of_humanity.md": {
+    "An Intimate History of Humanity by Theodore Zeldin": "(NOT YET FINISHED!!!) Children, free from responsibilities, protected by parents, grew up to become slaves. To step out into the unknown territory, without someone hand in hand, a scary thought. Therefore, we"
   }
 }
