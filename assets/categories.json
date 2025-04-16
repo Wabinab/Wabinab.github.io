@@ -90,7 +90,8 @@
     "2025-02-23-metamorphosis.md",
     "2025-03-09-Situation_and_story.md",
     "2025-02-13-Intimate_history_of_humanity.md",
-    "2025-03-28-Conversations.md"
+    "2025-03-28-Conversations.md",
+    "2025-04-04-Senseless_panic.md"
   ],
   "history": [
     "2024-03-11-Sapiens.md",
@@ -155,5 +156,11 @@
   "essay": [
     "2025-03-07-boringness.md",
     "2025-03-18-Why_we_save_energy.md"
+  ],
+  "financial": [
+    "2025-04-04-Senseless_panic.md"
+  ],
+  "economy": [
+    "2025-04-04-Senseless_panic.md"
   ]
 }
