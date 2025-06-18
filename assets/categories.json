@@ -95,7 +95,9 @@
     "2025-04-20-Humankind.md",
     "2025-05-16-A-swim-in-the-pond.md",
     "2025-05-23-joys_and_sorrows.md",
-    "2025-06-01-con_game.md"
+    "2025-06-01-con_game.md",
+    "2025-05-28-more-than-you-know.md",
+    "2025-06-14-teach_yourself_to_live.md"
   ],
   "history": [
     "2024-03-11-Sapiens.md",
@@ -126,10 +128,12 @@
     "2024-12-30-Snowball.md"
   ],
   "self_help": [
-    "2025-01-11-A_conversation.md"
+    "2025-01-11-A_conversation.md",
+    "2025-06-14-teach_yourself_to_live.md"
   ],
   "self_improvement": [
-    "2025-01-11-A_conversation.md"
+    "2025-01-11-A_conversation.md",
+    "2025-06-14-teach_yourself_to_live.md"
   ],
   "philosophy": [
     "2025-01-11-A_conversation.md"
@@ -164,7 +168,8 @@
     "2025-03-18-Why_we_save_energy.md"
   ],
   "financial": [
-    "2025-04-04-Senseless_panic.md"
+    "2025-04-04-Senseless_panic.md",
+    "2025-05-28-more-than-you-know.md"
   ],
   "economy": [
     "2025-04-04-Senseless_panic.md"
@@ -174,5 +179,8 @@
   ],
   "stranger": [
     "2025-06-01-con_game.md"
+  ],
+  "investment": [
+    "2025-05-28-more-than-you-know.md"
   ]
 }
