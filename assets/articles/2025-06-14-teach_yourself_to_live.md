@@ -13,3 +13,5 @@ And we don't even have choice for some of the things. Life is born with terms an
 
 - Don't copy others or conform unnecessarily to their conventions or opinions. 
 - There are limits which all our efforts cannot transcend. 
+
+(Abandoned from writing it. If one find time in the future and the heart to compile the info, maybe one'll continue. Else treat it as abandoned.)
