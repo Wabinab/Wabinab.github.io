@@ -37,7 +37,8 @@
     "2022-12-28-Material_Lies_The_Base_of_Invention.md",
     "2023-01-24-Thinking_Fast_and_Slow.md",
     "2024-03-03-Exploratory.md",
-    "2024-03-01-Grit.md"
+    "2024-03-01-Grit.md",
+    "2025-06-21-AI.md"
   ],
   "optimization": [
     "2022-05-02-Optimizing_Contract.md",
@@ -186,5 +187,8 @@
   ],
   "shame-on-me": [
     "2025-06-21-Psychological.md"
+  ],
+  "AI": [
+    "2025-06-21-AI.md"
   ]
 }
