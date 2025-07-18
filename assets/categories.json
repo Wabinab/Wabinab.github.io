@@ -23,7 +23,8 @@
     "2023-10-13-a_crypto_bug.md",
     "2024-02-12-A_Payment_System_On_Near_Protocol.md",
     "2024-06-17-bend_setup.md",
-    "2024-08-14-Setting_up_Angular_Electron_Sqlite3.md"
+    "2024-08-14-Setting_up_Angular_Electron_Sqlite3.md",
+    "2025-07-18-problem-with-woff.md"
   ],
   "another": [
     "2021-07-04-Sourcing_Images_Build_Model_and_Deployment.md"
@@ -190,5 +191,11 @@
   ],
   "AI": [
     "2025-06-21-AI.md"
+  ],
+  "bug": [
+    "2025-07-18-problem-with-woff.md"
+  ],
+  "issue": [
+    "2025-07-18-problem-with-woff.md"
   ]
 }

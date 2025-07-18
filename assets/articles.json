@@ -253,5 +253,8 @@
   },
   "2025-06-21-AI.md": {
     "What do we know really about AI? How to use AI?": "It’s a difficult question. Recently, Stack Overflow Blog showed one 4 articles, which one’ll call them article no. 1, article no. 2, article no. 3, and article no. 4; and after reading"
+  },
+  "2025-07-18-problem-with-woff.md": {
+    "Angular 17 `ng build` failed to compile because 'No loader is configured for \".woff2\" files'": "One had a program that was built with Angular 17, but when one tried to run ng build, it had a problem. ``` No loader is configured for “.woff2” files: node_modules/mathlive/fonts/KaTeX_Caligraphic-Bold.woff2 node_modules/mathlive/mathlive-fonts.css:1:254:"
   }
 }
