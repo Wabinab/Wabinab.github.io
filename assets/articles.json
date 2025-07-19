@@ -256,5 +256,8 @@
   },
   "2025-07-18-problem-with-woff.md": {
     "Angular 17 `ng build` failed to compile because 'No loader is configured for \".woff2\" files'": "One had a program that was built with Angular 17, but when one tried to run ng build, it had a problem. ``` No loader is configured for “.woff2” files: node_modules/mathlive/fonts/KaTeX_Caligraphic-Bold.woff2 node_modules/mathlive/mathlive-fonts.css:1:254:"
+  },
+  "2025-07-19-Summing_up.md": {
+    "The Summing Up By William Maugham": "One was introduced to this book by Teach Yourself to Live from C.G.L. Du Cann. William had been thinking a lot about what he wanted to write down, his wisdom, but earlier"
   }
 }
