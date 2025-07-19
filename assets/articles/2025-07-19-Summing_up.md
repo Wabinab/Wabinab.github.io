@@ -1,0 +1,14 @@
+# The Summing Up By William Maugham
+afterthought wisdom life
+
+One was introduced to this book by _Teach Yourself to Live_ from C.G.L. Du Cann. William had been thinking a lot about what he wanted to write down, his wisdom, but earlier in his life, he formed some shapes of mind that he couldn't yet discern. And from reading Anthony Trollope's Autobiography and what happened to him after he published it too early, he had doubts of doing the same. When things were no longer at stake latter in his life, only did he had the courage to share them to the world; and only then did he had time to sit down and write what had been bothering his mind for decades. 
+
+There are only a limited number of quirks that people can have, so though their combinations are many, in a specific category in a specific field, you may share something with another. And surprisingly, or rather, it's inevitable, that one found a lot in common with author. Though we chose a different path to take, to go down different roads, at least in one moment in time, we share something similar. And one can't help but relate oneself with him. 
+
+It also means that, because one shared so many with William, one can't help but think that perhaps what he taught will help me a lot. He had walked his road, and one had been in his situation. The world had changed a lot, and one had walked different path, so they might or might not be applicable; but just seeing how he solved his problem and what he came to conclusion with, one feels a sense of security. 
+
+Especially when one needed security the most. When one felt not like doing work, not like reading Chinese novels, not like playing games, not like reading any other books. Sometimes, it's worth doing nothing and let one's mind solve it itself. Other times, one needs an anchor -- and this book, _The Summing Up_, provides such anchor. What one's reading at the moment might not solve one's problem, yet one can't help but feel one's anxious heart calm down. Long after it loses its popularity, it provided one with its requited serenity and tranquility when one was in distress. 
+
+But good things come to an end. Now that one'd finished his book, one don't know what will one read in the future when one feel distress again; but his words will forever ring true, and one'd compiled them into 111 points that one thought would help one with. One won't write it here, because one don't write on the computer but in one's physical notebook. But hey, the future isn't as bad as one, an extreme pessimist, thought it is. And with William walking by my side, one thought one can face this world with more courage and encouragement, that there's someone always beside me to provide me with guidance. 
+
+And one think that's something to be grateful for. 
