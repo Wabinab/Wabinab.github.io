@@ -277,5 +277,8 @@
   },
   "2026-08-07-theres_a_devil_within_me.md": {
     "There's A Devil Within Me": "There’s a devil within me, oh, there’s a devil within me. There’s a devil within me that yearns to do something different than me. There’s a devil within me, oh, there’s a"
+  },
+  "2026-11-24-Compute_vs_Memory_bound.md": {
+    "Compute vs Memory Bound": "Yesterday, one had a dream about how a compute and memory bound job actually works. And one think it’s worth sharing it. Imagine you have the memory living below you, the compute"
   }
 }

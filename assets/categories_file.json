@@ -335,5 +335,10 @@
   "2026-08-07-theres_a_devil_within_me.md": [
     "creative",
     "free_writing"
+  ],
+  "2026-11-24-Compute_vs_Memory_bound.md": [
+    "gpu",
+    "cuda",
+    "ai"
   ]
 }

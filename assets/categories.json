@@ -123,7 +123,8 @@
     "2024-06-17-bend_setup.md"
   ],
   "cuda": [
-    "2024-06-17-bend_setup.md"
+    "2024-06-17-bend_setup.md",
+    "2026-11-24-Compute_vs_Memory_bound.md"
   ],
   "app": [
     "2024-08-14-Setting_up_Angular_Electron_Sqlite3.md"
@@ -236,7 +237,8 @@
     "2026-04-16-Interesting-Stars.md"
   ],
   "ai": [
-    "2026-05-22-AI-choices.md"
+    "2026-05-22-AI-choices.md",
+    "2026-11-24-Compute_vs_Memory_bound.md"
   ],
   "models": [
     "2026-05-22-AI-choices.md"
@@ -255,5 +257,8 @@
   ],
   "free_writing": [
     "2026-08-07-theres_a_devil_within_me.md"
+  ],
+  "gpu": [
+    "2026-11-24-Compute_vs_Memory_bound.md"
   ]
 }
